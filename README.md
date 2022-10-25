@@ -1,7 +1,17 @@
-I’m @MatteoCherubini, graduated in Computer Science in Florence in the Academic Year 2020/2021 with a thesis on PWA.
+Hi, I am @MatteoCherubini, a Computer Science graduate from Florence in the 2020/2021 academic year with a thesis on Progressive Web Apps.
 
-I have general interests and knowledge regarding Music, Video and Photography.
+I spent a few months of 2022 in America studying, with excellent results, in an incredible college course in Indianapolis called the Program for Intensive English (PIE), in which I met students from literally all over the world and discovered that I was not so antisocial after all.
 
-My intentions for the future are aimed at the profession of Developer Advocate: I'm a good teacher and I always keep up to date on new technologies.
+I have interest regarding Recording and Production, Video Content Creation and Photography.
 
-I’m currently using Node.js, Vue.js, Bun, Ionic, Firebase to develop Progressive Web Applications and Obsidian to keep me productive.
+Professionally, as reflected in my Thesis, I am interested in how Users approach modern Operating Systems, including modern Web Browsers.
+
+My intentions for the future are towards the profession of Developer Advocate, a profession in which one Experiments, Studies and Teaches. Which fits me like a glove.
+
+I am also passionate about and therefore keep up to date with new Technologies.
+
+I am currently using Node.js as a JavaScript runtime and am getting interested in the Bun project, while as a development framework I am using Vue.js and Ionic for the front-end side, while Firebase for the back-end side of Progressive Web Applications.
+
+Finally, I am getting into Obsidian, an extremely efficient notes program that I use to keep productive and up-to-date.
+
+Overall I would describe myself as mediocre, but at my best.
