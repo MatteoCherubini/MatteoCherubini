@@ -14,4 +14,4 @@ I am currently using Node.js as a JavaScript runtime and am getting interested i
 
 Finally, I am getting into Obsidian, an extremely efficient notes program that I use to keep productive and up-to-date.
 
-Overall I would describe myself as mediocre, but at my best.
+Overall I would describe myself as mediocre :eyes:, but at my best.
