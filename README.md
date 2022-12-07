@@ -12,6 +12,8 @@ I am also passionate about and therefore keep up to date with new Technologies.
 
 I am currently using [Node.js](https://nodejs.org/en/about/) as a JavaScript runtime and am getting interested in the [Bun](https://bun.sh/) project, while as a development framework I am using [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI&ab_channel=Honeypot) and [Ionic](https://ionicframework.com/) for the front-end side, while [Firebase](https://firebase.google.com/use-cases) for the back-end side of Progressive Web Applications.
 
+Right now I am also studying for the [first certification](https://www.lpi.org/our-certifications/lpic-1-overview) in the Linux Professional Institute's (LPI) multi-level Linux professional certification program.
+
 Finally, I am getting into [Obsidian](https://obsidian.md/), an extremely efficient notes program that I use to keep productive and up-to-date.
 
 Overall I would describe myself as mediocre 👀, but at my best 👍.
