@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Matteo Cherubini — Curriculum Vitae</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae of Matteo Cherubini — front-end developer and independent consultant in applied AI and knowledge systems."
+    />
+    <meta name="author" content="Matteo Cherubini" />
+
+    <!-- Atkinson Hyperlegible: designed by the Braille Institute for low-vision readers.
+     Loaded with a legible fallback stack so the document still works offline. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+      :root {
+        --font-body:
+          "Atkinson Hyperlegible", Verdana, Tahoma, system-ui, sans-serif;
+
+        --ink: #14202e;
+        --ink-soft: #4a5666;
+        --muted: #6b7787;
+        --accent: #003399; /* Europass blue */
+        --rule: #d5dce5;
+        --sheet: #ffffff;
+        --canvas: #e9edf2;
+        --mark: #f1f5fa;
+
+        --sheet-w: 210mm;
+        --pad-x: 17mm;
+        --pad-y: 15mm;
+        --rail: 8.5rem;
+      }
+
+      html[data-theme="dark"] {
+        --ink: #e9eef4;
+        --ink-soft: #b3bdca;
+        --muted: #8e9aa8;
+        --accent: #8ab4f8;
+        --rule: #2c3644;
+        --sheet: #171c23;
+        --canvas: #0e1116;
+        --mark: #1e252f;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.55;
+        color: var(--ink);
+        background: var(--canvas);
+        padding: 1.5rem 1rem 4rem;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ============================================================
+   ACCESSIBILITY PRIMITIVES
+   ============================================================ */
+      .skip {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        background: var(--accent);
+        color: #fff;
+        padding: 0.75rem 1.25rem;
+        z-index: 100;
+        border-radius: 0 0 6px 0;
+        font-weight: 700;
+      }
+      .skip:focus {
+        left: 0;
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* ============================================================
+   TOOLBAR (screen only)
+   ============================================================ */
+      .toolbar {
+        max-width: var(--sheet-w);
+        margin: 0 auto 0.75rem;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .btn {
+        font: inherit;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--accent);
+        background: var(--sheet);
+        border: 1.5px solid var(--rule);
+        padding: 0.5rem 0.9rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition:
+          border-color 0.15s,
+          background 0.15s;
+      }
+      .btn:hover {
+        border-color: var(--accent);
+        background: var(--mark);
+      }
+      .btn[aria-pressed="true"] {
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+      }
+
+      /* ============================================================
+   SHEET
+   ============================================================ */
+      .sheet {
+        max-width: var(--sheet-w);
+        margin: 0 auto;
+        background: var(--sheet);
+        padding: var(--pad-y) var(--pad-x);
+        box-shadow:
+          0 1px 2px rgba(20, 32, 46, 0.05),
+          0 6px 22px rgba(20, 32, 46, 0.05);
+        border-radius: 3px;
+      }
+
+      /* ---------- Masthead ---------- */
+      .masthead {
+        border-bottom: 2.5px solid var(--accent);
+        padding-bottom: 0.9rem;
+      }
+
+      .eyebrow {
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.5rem;
+      }
+
+      .name {
+        font-size: 2.1rem;
+        line-height: 1.1;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: -0.015em;
+      }
+
+      .headline {
+        font-size: 1rem;
+        color: var(--ink-soft);
+        font-weight: 700;
+        margin-top: 0.2rem;
+      }
+
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 0.15rem 1.75rem;
+        margin-top: 0.9rem;
+        font-size: 0.85rem;
+      }
+      .fact {
+        display: flex;
+        gap: 0.4rem;
+      }
+      .fact dt {
+        font-weight: 700;
+        color: var(--accent);
+        white-space: nowrap;
+      }
+      .fact dd {
+        color: var(--ink-soft);
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+      .fact a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid var(--rule);
+      }
+      .fact a:hover {
+        border-bottom-color: var(--accent);
+        color: var(--accent);
+      }
+
+      /* ---------- Sections ---------- */
+      .section {
+        margin-top: 1.6rem;
+        break-inside: auto;
+      }
+
+      .section > h2 {
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--accent);
+        border-bottom: 1px solid var(--accent);
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.85rem;
+        break-after: avoid;
+      }
+
+      .about p {
+        margin-bottom: 0.6rem;
+        text-wrap: pretty;
+      }
+      .about p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ---------- Entries ---------- */
+      .entry {
+        display: grid;
+        grid-template-columns: var(--rail) 1fr;
+        gap: 0 1.4rem;
+        padding-bottom: 1rem;
+        break-inside: avoid;
+      }
+      .entry + .entry {
+        border-top: 1px solid var(--rule);
+        padding-top: 1rem;
+      }
+      .entry:last-child {
+        padding-bottom: 0;
+      }
+
+      .entry-rail {
+        font-size: 0.78rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      .entry-rail .dates {
+        font-weight: 700;
+        color: var(--ink-soft);
+        display: block;
+      }
+      .entry-rail .badge {
+        display: inline-block;
+        margin-top: 0.3rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      .entry-title {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.35;
+      }
+      .entry-org {
+        font-size: 0.88rem;
+        color: var(--ink-soft);
+        font-style: italic;
+        margin-bottom: 0.45rem;
+      }
+      .entry-lead {
+        font-size: 0.88rem;
+        margin-bottom: 0.45rem;
+        text-wrap: pretty;
+      }
+
+      .entry-body ul {
+        list-style: none;
+      }
+      .entry-body li {
+        font-size: 0.86rem;
+        padding-left: 0.95rem;
+        margin-bottom: 0.3rem;
+        position: relative;
+        text-wrap: pretty;
+      }
+      .entry-body li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.58em;
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      /* ---------- Skills ---------- */
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        gap: 0.9rem 1.75rem;
+      }
+      .skill-group {
+        break-inside: avoid;
+      }
+      .skill-group h3 {
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: var(--accent);
+        margin-bottom: 0.3rem;
+      }
+      .chips {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem 0.35rem;
+      }
+      .chip {
+        font-size: 0.76rem;
+        line-height: 1.4;
+        padding: 0.1rem 0.55rem;
+        background: var(--mark);
+        border-radius: 999px;
+        color: var(--ink-soft);
+      }
+
+      /* ---------- Languages ---------- */
+      .lang {
+        break-inside: avoid;
+      }
+      .lang-name {
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+      .lang-note {
+        font-size: 0.8rem;
+        color: var(--muted);
+        margin-top: 0.15rem;
+      }
+      .levels {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        gap: 0.5rem 1rem;
+        margin-top: 0.55rem;
+        align-items: end;
+      }
+      .level dt {
+        font-size: 0.66rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .level dd {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      /* ---------- Inline lists ---------- */
+      .stack {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+      }
+      .mini {
+        break-inside: avoid;
+      }
+      .mini h3 {
+        font-size: 0.88rem;
+        font-weight: 700;
+      }
+      .mini p {
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+        text-wrap: pretty;
+      }
+      .mini .when {
+        font-size: 0.78rem;
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      /* ---------- Footer ---------- */
+      .colophon {
+        margin-top: 1.8rem;
+        padding-top: 0.7rem;
+        border-top: 1px solid var(--rule);
+        font-size: 0.72rem;
+        color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      /* ============================================================
+   NARROW SCREENS
+   ============================================================ */
+      @media (max-width: 40rem) {
+        body {
+          padding: 0.75rem 0.5rem 3rem;
+        }
+        .sheet {
+          padding: 1.25rem 1.1rem;
+        }
+        .name {
+          font-size: 1.6rem;
+        }
+        .entry {
+          grid-template-columns: 1fr;
+          gap: 0.35rem;
+        }
+        .entry-rail {
+          order: 2;
+        }
+        .entry-rail .dates {
+          display: inline;
+        }
+      }
+
+      /* ============================================================
+   PRINT — A4, light theme forced, no orphan entries
+   ============================================================ */
+      @page {
+        size: A4;
+        margin: 14mm 14mm 12mm;
+      }
+
+      @media print {
+        html[data-theme] {
+          --ink: #14202e;
+          --ink-soft: #3d4757;
+          --muted: #5f6b7a;
+          --accent: #003399;
+          --rule: #c8d1dc;
+          --sheet: #fff;
+          --canvas: #fff;
+          --mark: #f2f5f9;
+        }
+        body {
+          background: #fff;
+          padding: 0;
+          font-size: 10.2pt;
+          line-height: 1.42;
+        }
+        .toolbar,
+        .skip {
+          display: none !important;
+        }
+        .sheet {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+          border-radius: 0;
+        }
+        .name {
+          font-size: 20pt;
+        }
+        .headline {
+          font-size: 10.5pt;
+        }
+        .section {
+          margin-top: 11pt;
+        }
+        .section > h2 {
+          font-size: 9pt;
+        }
+        .entry {
+          padding-bottom: 8pt;
+        }
+        .entry + .entry {
+          padding-top: 8pt;
+        }
+        .entry-body li,
+        .entry-lead {
+          font-size: 9.2pt;
+        }
+        .skills {
+          gap: 8pt 18pt;
+        }
+        .skill-group {
+          break-inside: avoid;
+        }
+        .chips {
+          display: block;
+        }
+        .chip {
+          display: inline;
+          background: none;
+          padding: 0;
+          border-radius: 0;
+          font-size: 9pt;
+          color: var(--ink-soft);
+        }
+        .chip:not(:last-child)::after {
+          content: " · ";
+          color: var(--muted);
+        }
+        .levels {
+          gap: 3pt 10pt;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+        .colophon {
+          margin-top: 12pt;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip" href="#cv">Skip to CV content</a>
+
+    <div class="toolbar no-print" role="toolbar" aria-label="Document actions">
+      <button class="btn" id="btn-print" type="button">
+        Print / Save as PDF
+      </button>
+      <button class="btn" id="btn-theme" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+    </div>
+
+    <main class="sheet" id="cv"></main>
+
+    <script>
+      /* ================================================================
+   ▼▼▼  EDIT ONLY THIS OBJECT — the layout renders itself  ▼▼▼
+   ================================================================ */
+      const CV = {
+        person: {
+          name: "Matteo Cherubini",
+          headline: "Front-end developer · Applied AI and knowledge systems",
+          facts: [
+            { label: "Nationality", value: "Italian" },
+            { label: "Date of birth", value: "27 March 1997" },
+            { label: "Place of birth", value: "Florence, Italy" },
+            {
+              label: "Address",
+              value: "via Santa Gonda 108, 59100 Prato (PO), Italy",
+            },
+            {
+              label: "Phone",
+              value: "(+39) 327 6615664",
+              href: "tel:+393276615664",
+            },
+            {
+              label: "Email",
+              value: "cherubinimatte@gmail.com",
+              href: "mailto:cherubinimatte@gmail.com",
+            },
+            {
+              label: "GitHub",
+              value: "github.com/MatteoCherubini",
+              href: "https://github.com/MatteoCherubini",
+            },
+            {
+              label: "Medium",
+              value: "medium.com/@cherubinimatte",
+              href: "https://medium.com/@cherubinimatte",
+            },
+          ],
+        },
+
+        about: [
+          "Front-end developer (Angular) with three years' experience building the digital backbone of Italian education and cultural heritage: HUB Scuola, the main learning platform for Italian schools, and platforms for the National Central Library of Rome and CNR research infrastructures linked to the European Open Science Cloud — with a consistent focus on web accessibility.",
+          "Now an independent consultant in applied AI and knowledge management, designing systems end-to-end, from the security model to local LLM inference and human review. I work equally well inside structured teams and in full autonomy, including projects for regional public bodies run from requirements to delivery. C1 English, certified.",
+          "My method is algorithmic: break the problem down, optimise the flow, keep the map in my head, and write it down so it outlives me.",
+        ],
+
+        work: [
+          {
+            title: "Front-end developer",
+            org: "Gruppo Meta / M.E.T.A. S.r.l. (ETT Group), later Deda Next S.r.l. (Dedagroup)",
+            dates: "24 Jan 2023 – 1 May 2026",
+            place: "Florence and Pisa, Italy",
+            lead: "Front-end developer (Angular) in a software house specialised in the digitalisation of educational publishing, cultural heritage and research. Permanent contract; work split between the Florence and Pisa offices.",
+            bullets: [
+              "Angular development for Mondadori Education's HUB Scuola, the main digital learning platform for Italian schools: rollout of the new design system and independent development of new features, in particular interactive quizzes and exercises embedded in e-books.",
+              "Translation of design mock-ups into Angular components; design and implementation of entire application flows of varying complexity.",
+              "Web accessibility (a11y) in line with EU Directive 2016/2102; refactoring, debugging and unit testing.",
+              "Large-scale modernisation of legacy viewers for complex editorial formats, carried out autonomously in close cooperation with the design and UX teams.",
+              "Front-end contribution, within project teams, to platforms for national cultural and research institutions: digitalisation of the collections of the National Central Library of Rome, and CNR research infrastructures in the digital humanities (funded under NextGenerationEU and linked to the European Open Science Cloud).",
+              "Projects for regional public bodies managed end-to-end, from requirements gathering to delivery, with direct contact with the client.",
+              "Development and integration of Node.js APIs together with the back-end team; data visualisation (charts and tables).",
+              "Tools: Angular, TypeScript, Node.js, Docker, Postman, Figma, Git (structured repositories with submodules).",
+            ],
+          },
+          {
+            title: "ICT consultant",
+            org: "Self-employed",
+            dates: "1 May 2026 – Current",
+            place: "Prato, Italy",
+            lead: "Independent technology consultant working on applied AI and knowledge management.",
+            bullets: [
+              "Integration of AI-based tools for professional firms (accountancy practices), automating repetitive workflows to free human time for analysis and judgment.",
+              "Design and development of AI systems: OCR pipelines, self-maintaining documentation, retrieval architectures beyond the standard RAG approach.",
+              "Design and operation of a self-hosted infrastructure supporting this work: containerisation, virtualisation, networking, security and local LLM inference on GPU.",
+              "See Projects below for the systems built in this period.",
+            ],
+          },
+        ],
+
+        education: [
+          {
+            title:
+              "Laurea in Informatica (Bachelor's Degree in Computer Science) — Class L-31, Computer Science and Technologies",
+            org: "University of Florence — School of Mathematical, Physical and Natural Sciences",
+            dates: "1 Oct 2016 – 7 Jun 2022",
+            place: "Florence, Italy",
+            badge: "EQF 6",
+            lead: "Three-year degree in Computer Science (180 ECTS).",
+            bullets: [
+              "Programming and software engineering: programming, programming methodologies, concurrent programming, algorithms and data structures, interpreters and compilers, theoretical computer science.",
+              "Systems and networks: operating systems, computer architecture, computer networks.",
+              "Data and mathematics: databases and information systems, probability and statistics, numerical analysis, calculus I and II, linear algebra, discrete mathematics and logic, general physics.",
+              "Security: computer forensics — digital investigation and the legal framework of IT evidence.",
+              "Design and business: multimedia design and production, business skills.",
+              "Curricular internship (12 ECTS).",
+              "Final thesis: “Progressive Web Applications and Web Operating Systems” (supervisor: Prof. Rosario Pugliese; co-supervisor: Prof. Francesco Tiezzi). An analysis of Progressive Web Apps as a standards-based, cross-platform alternative to native applications, including a fully working PWA developed with Node.js, Ionic, Vue.js and Firebase.",
+            ],
+          },
+          {
+            title:
+              "Program for Intensive English (PIE) — Level 6 of 7, corresponding to CEFR C1",
+            org: "Indiana University–Purdue University Indianapolis (IUPUI)",
+            dates: "22 Aug 2022 – 12 Oct 2022",
+            place: "Indianapolis, United States",
+            lead: "Intensive academic English programme (autumn session) at an American university.",
+            bullets: [
+              "Achieved level 6 out of 7 in both Reading–Writing and Listening–Speaking, corresponding to CEFR level C1.",
+              "Academic writing, oral presentation and discussion skills.",
+              "Full immersion in an international student environment.",
+            ],
+          },
+          {
+            title:
+              "Sommelier training course — Level 1 completed, Level 2 in progress",
+            org: "Associazione Italiana Sommelier (AIS) — Tuscany",
+            dates: "28 Oct 2025 – Current",
+            place: "Prato, Italy",
+            lead: "Professional sommelier training: viticulture and oenology, tasting technique and sensory analysis, Italian and international wine regions, food and wine pairing, wine service.",
+          },
+        ],
+
+        projects: [
+          {
+            title: "Knowledge Genome Orchestrator",
+            org: "Personal project",
+            dates: "2026 – Current",
+            lead: "A distributed, encrypted, multi-domain knowledge base in which an LLM agent incrementally builds and maintains a persistent wiki, instead of re-deriving knowledge at query time (no vector database, no embedding pipeline, no retrieval server).",
+            bullets: [
+              "Two-phase agent architecture with an explicit trust boundary: the agent performs semantic work only, a deterministic and tested post-processor validates its output before anything touches the filesystem.",
+              "Per-genome AES-256 encryption (git-crypt) with runtime key injection from a password manager, so the key never touches disk.",
+              "Human review gate through pull requests; deterministic test suite with no dependency on model, GPU or network.",
+              "Multi-domain architecture based on Git submodules, orchestrated via webhooks and local LLM inference.",
+            ],
+          },
+          {
+            title: "NETKIT — network field audit toolkit",
+            org: "Personal project",
+            dates: "2026 – Current",
+            lead: "A terminal application for professional network auditing, designed for consultants and freelancers, in which the legal layer is a first-class component rather than an afterthought.",
+            bullets: [
+              "Digital consent flow producing a non-repudiable SHA-256 hash of agreement, timestamp and scope.",
+              "Fail-closed “scope guard” validating every IP and subnet in real time, with time windows and exclusion lists.",
+              "Alignment with NIS2 and GDPR; local-first AI reporting so audit data never leaves the machine.",
+              "Built on Bun and OpenTUI with strictly typed TypeScript (branded types, result pattern) and SQLite.",
+            ],
+          },
+          {
+            title: "Self-hosted infrastructure",
+            org: "Personal project",
+            dates: "2026 – Current",
+            lead: "A fully containerised self-hosted stack built with Docker Compose, deliberately chosen over Kubernetes for operational simplicity, fast recovery and maintainability.",
+            bullets: [
+              "Reverse proxy and SSL management, private Git hosting (Forgejo), workflow automation (n8n with PostgreSQL and Redis), secure external access via Cloudflare Tunnel.",
+              "Local LLM runtime (Ollama) with NVIDIA GPU acceleration; infrastructure-as-code and reproducible, independently deployable stacks.",
+            ],
+          },
+        ],
+
+        skills: [
+          {
+            group: "Front-end and web",
+            items: [
+              "TypeScript",
+              "Angular",
+              "CSS",
+              "JavaScript",
+              "implement front-end website design",
+              "design user interface",
+              "World Wide Web Consortium standards",
+              "use markup languages",
+            ],
+          },
+          {
+            group: "Programming and software engineering",
+            items: [
+              "use software design patterns",
+              "develop software prototype",
+              "object-oriented modelling",
+              "use object-oriented programming",
+              "use software libraries",
+              "debug software",
+            ],
+          },
+          {
+            group: "AI and emerging technologies",
+            items: [
+              "principles of artificial intelligence",
+              "emergent technologies",
+              "use automatic programming",
+            ],
+          },
+          {
+            group: "Security and compliance",
+            items: [
+              "ICT security legislation",
+              "NIS2 and GDPR alignment",
+              "digital forensics fundamentals",
+            ],
+          },
+          {
+            group: "Infrastructure and tools",
+            items: [
+              "tools for software configuration management",
+              "Git",
+              "Docker",
+              "Forgejo",
+              "n8n",
+              "Ollama",
+              "Proxmox",
+            ],
+          },
+          {
+            group: "Client and consulting",
+            items: [
+              "identify customer requirements",
+              "propose ICT solutions to business problems",
+              "collect customer feedback on applications",
+              "use online tools to collaborate",
+              "adapt to changes in technological development plans",
+              "keep up with the latest information systems solutions",
+            ],
+          },
+        ],
+
+        languages: {
+          mother: "Italian",
+          others: [
+            {
+              name: "English",
+              note: "Certified C1 — Program for Intensive English (level 6 of 7), IUPUI, Indianapolis, October 2022.",
+              levels: [
+                ["Listening", "C1"],
+                ["Reading", "C1"],
+                ["Writing", "C1"],
+                ["Spoken production", "C1"],
+                ["Spoken interaction", "C1"],
+              ],
+            },
+          ],
+        },
+
+        publications: [
+          {
+            title: "Progressive Web Applications and Web Operating Systems",
+            when: "2022",
+            text: "Bachelor thesis, University of Florence. Supervisor: Prof. Rosario Pugliese; co-supervisor: Prof. Francesco Tiezzi.",
+          },
+        ],
+
+        driving: [
+          { title: "Category B", when: "11 Jul 2016 – 27 Mar 2034" },
+          { title: "Category A", when: "9 Sep 2023 – 27 Mar 2034" },
+        ],
+
+        interests: [
+          {
+            title: "Agriculture, food and beverage culture",
+            text: "Sustainable, non-intensive agriculture and quality food supply chains (Slow Food). Director of a family-run agricultural business managing farmland and rural property in Umbria. Viticultural biodiversity through G.R.A.S.P.O., the ampelographic research association recovering ancient and rare grape varieties. Wine culture (AIS member, sommelier in training). Specialty coffee.",
+          },
+          {
+            title: "Sustainable development, finance and society",
+            text: "Ethical finance, microcredit and ESG investing. Geopolitics, accessibility and digital rights.",
+          },
+        ],
+
+        networks: [
+          {
+            title: "Associazione Italiana Sommelier (AIS) — Tuscany",
+            when: "1 Oct 2025 – Current",
+          },
+        ],
+
+        colophon: {
+          left: "Curriculum Vitae — Matteo Cherubini · Structured after the Europass format",
+          right: "Set in Atkinson Hyperlegible · Last updated: July 2026",
+        },
+      };
+      /* ================================================================
+   ▲▲▲  END OF DATA — no need to edit anything below  ▲▲▲
+   ================================================================ */
+
+      /* ---------- helpers ---------- */
+      const esc = (s) =>
+        String(s).replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            })[c],
+        );
+
+      const list = (items) =>
+        items?.length
+          ? `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`
+          : "";
+
+      const section = (id, title, body) =>
+        body
+          ? `<section class="section" aria-labelledby="${id}">
+       <h2 id="${id}">${esc(title)}</h2>${body}
+     </section>`
+          : "";
+
+      /* ---------- renderers ---------- */
+      function renderMasthead(p) {
+        const facts = p.facts
+          .map(
+            (f) => `
+    <div class="fact">
+      <dt>${esc(f.label)}</dt>
+      <dd>${f.href ? `<a href="${esc(f.href)}">${esc(f.value)}</a>` : esc(f.value)}</dd>
+    </div>`,
+          )
+          .join("");
+
+        return `<header class="masthead">
+    <p class="eyebrow">Curriculum Vitae</p>
+    <h1 class="name">${esc(p.name)}</h1>
+    <p class="headline">${esc(p.headline)}</p>
+    <dl class="facts">${facts}</dl>
+  </header>`;
+      }
+
+      function renderEntry(e) {
+        const rail = `<div class="entry-rail">
+      <span class="dates">${esc(e.dates)}</span>
+      ${e.place ? esc(e.place) : ""}
+      ${e.badge ? `<span class="badge">${esc(e.badge)}</span>` : ""}
+    </div>`;
+
+        const body = `<div class="entry-body">
+      <h3 class="entry-title">${esc(e.title)}</h3>
+      ${e.org ? `<p class="entry-org">${esc(e.org)}</p>` : ""}
+      ${e.lead ? `<p class="entry-lead">${esc(e.lead)}</p>` : ""}
+      ${list(e.bullets)}
+    </div>`;
+
+        return `<article class="entry">${rail}${body}</article>`;
+      }
+
+      const renderEntries = (arr) => arr.map(renderEntry).join("");
+
+      function renderSkills(groups) {
+        return `<div class="skills">${groups
+          .map(
+            (g) => `
+    <div class="skill-group">
+      <h3>${esc(g.group)}</h3>
+      <ul class="chips" aria-label="${esc(g.group)}">
+        ${g.items.map((i) => `<li class="chip">${esc(i)}</li>`).join("")}
+      </ul>
+    </div>`,
+          )
+          .join("")}</div>`;
+      }
+
+      function renderLanguages(l) {
+        const others = l.others
+          .map(
+            (o) => `
+    <div class="lang">
+      <p class="lang-name">${esc(o.name)}</p>
+      ${o.note ? `<p class="lang-note">${esc(o.note)}</p>` : ""}
+      <dl class="levels">
+        ${o.levels
+          .map(
+            ([k, v]) => `
+          <div class="level"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`,
+          )
+          .join("")}
+      </dl>
+    </div>`,
+          )
+          .join("");
+
+        return `<div class="stack">
+      <div class="mini"><h3>Mother tongue</h3><p>${esc(l.mother)}</p></div>
+      ${others}
+    </div>`;
+      }
+
+      function renderMinis(items) {
+        return `<div class="stack">${items
+          .map(
+            (i) => `
+    <div class="mini">
+      ${i.when ? `<p class="when">${esc(i.when)}</p>` : ""}
+      <h3>${esc(i.title)}</h3>
+      ${i.text ? `<p>${esc(i.text)}</p>` : ""}
+    </div>`,
+          )
+          .join("")}</div>`;
+      }
+
+      /* ---------- compose ---------- */
+      document.getElementById("cv").innerHTML = [
+        renderMasthead(CV.person),
+        section(
+          "s-about",
+          "About me",
+          `<div class="about">${CV.about.map((p) => `<p>${esc(p)}</p>`).join("")}</div>`,
+        ),
+        section("s-work", "Work experience", renderEntries(CV.work)),
+        section("s-edu", "Education and training", renderEntries(CV.education)),
+        section("s-proj", "Projects", renderEntries(CV.projects)),
+        section("s-skills", "Skills", renderSkills(CV.skills)),
+        section("s-lang", "Language skills", renderLanguages(CV.languages)),
+        section("s-pubs", "Publications", renderMinis(CV.publications)),
+        section("s-net", "Networks and memberships", renderMinis(CV.networks)),
+        section("s-drive", "Driving licence", renderMinis(CV.driving)),
+        section("s-int", "Hobbies and interests", renderMinis(CV.interests)),
+        `<footer class="colophon">
+     <span>${esc(CV.colophon.left)}</span>
+     <span>${esc(CV.colophon.right)}</span>
+   </footer>`,
+      ].join("");
+
+      /* ---------- toolbar ---------- */
+      document
+        .getElementById("btn-print")
+        .addEventListener("click", () => window.print());
+
+      const root = document.documentElement;
+      const themeBtn = document.getElementById("btn-theme");
+
+      if (window.matchMedia?.("(prefers-color-scheme: dark)").matches) {
+        root.dataset.theme = "dark";
+        themeBtn.setAttribute("aria-pressed", "true");
+        themeBtn.textContent = "Light mode";
+      }
+
+      themeBtn.addEventListener("click", () => {
+        const dark = root.dataset.theme !== "dark";
+        root.dataset.theme = dark ? "dark" : "light";
+        themeBtn.setAttribute("aria-pressed", String(dark));
+        themeBtn.textContent = dark ? "Light mode" : "Dark mode";
+      });
+    </script>
+  </body>
+</html>
