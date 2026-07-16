@@ -1,19 +1,33 @@
-Hi, I am @MatteoCherubini, a Computer Science graduate from Florence in the 2020/2021 academic year with a thesis on Progressive Web Apps.
+Hi, I'm @MatteoCherubini — a developer from Tuscany who builds knowledge systems, secures them, and writes down what happened.
 
-I spent a few months of 2022 in America studying, with excellent results, in an incredible college course in Indianapolis called the [Program for Intensive English](https://liberalarts.iupui.edu/programs/inpie/our-program/study-english-at-pie/) (PIE), in which I met students from literally all over the world and discovered that I was not so antisocial after all.
+I studied Computer Science in Florence ([thesis on Progressive Web Apps](https://github.com/MatteoCherubini/text-editor-pwa/blob/master/presentazioneCherubini4.pdf), 2022), then spent three years on the front-end of Italian digital publishing and cultural heritage — school platforms, library collections, a lot of accessibility work — and in 2026 went independent to work on the things that kept getting postponed.
 
-I have interest regarding Recording and Production, Video Content Creation and Photography.
+## What I'm building
 
-Professionally, as reflected in my [Thesis](https://github.com/MatteoCherubini/text-editor-pwa/blob/master/presentazioneCherubini4.pdf), I am interested in how Users approach modern Operating Systems, including modern Web Browsers.
+**My Homelab** — A fully containerized self-hosted stack: reverse proxy, private Git, workflow automation, local LLM inference on GPU. Reproducible, modular, boring in the best possible way.
 
-My intentions for the future are towards the profession of Developer Advocate, a profession in which one Experiments, Studies and Teaches. Which fits me like a glove.
+**Knowledge Genome Orchestrator** — a distributed, encrypted, multi-domain knowledge base. An LLM agent incrementally builds and maintains a persistent wiki instead of re-discovering everything at query time: no vector DB, no embedding pipeline, no retrieval server. Knowledge compiled once and kept current, rather than re-derived on every question. Two-phase agent architecture with a hard trust boundary between semantic work and deterministic post-processing, per-genome AES-256 encryption, keys injected at runtime that never touch disk, and a human review gate through pull requests.
 
-I am also passionate about and therefore keep up to date with new Technologies.
+**NETKIT** — a TUI for professional network auditing with a legal engine: non-repudiable consent hashes, a fail-closed scope guard, NIS2/GDPR alignment. Built on [Bun](https://bun.sh/) + OpenTUI.
 
-I am currently using [Node.js](https://nodejs.org/en/about/) as a JavaScript runtime and am getting interested in the [Bun](https://bun.sh/) project, while as a development framework I am using [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI&ab_channel=Honeypot) and [Ionic](https://ionicframework.com/) for the front-end side, while [Firebase](https://firebase.google.com/use-cases) for the back-end side of Progressive Web Applications.
+## The stack, honestly
 
-Right now I am also studying for the [first certification](https://www.lpi.org/our-certifications/lpic-1-overview) in the Linux Professional Institute's (LPI) multi-level Linux professional certification program.
+TypeScript on Bun, Node.js, Angular. Docker, Proxmox, Forgejo, n8n. [Ollama](https://ollama.com/) for local models. git-crypt and Vaultwarden for anything that matters. [Obsidian](https://obsidian.md/) for everything I need to remember.
 
-Finally, I am getting into [Obsidian](https://obsidian.md/), an extremely efficient notes program that I use to keep productive and up-to-date.
+## What changed
 
-Overall I would describe myself as mediocre 👀, but at my best 👍.
+I first became interested in this field around 2020. I read everything I could on the subject, and at the time there was a real buzz in the open-source world. I wrote my thesis on Progressive Web Apps because I saw them as a democratic tool: a single source code, with no gatekeepers. Within a few years, I watched those ideas saturate. The market, which previously wanted us divided into front-end and back-end roles, began to demand that we be standardised instead. By the time implementation had become that predictable, there was very little in it a model couldn't learn.
+
+What drew me in was the ideas, and that part hasn't changed. Models can generate implementations, but they don't understand design concepts, and they don't carry the consequences of the decisions they make. So the work moves up a level: understanding a system well enough to decide what can be delegated, what can be verified, and what still requires human judgment. Orchestration rather than implementation — but only if you've earned the understanding needed to orchestrate.
+
+So now I work where ideas still have room: local-first AI, knowledge that maintains itself, tools that take responsibility for what they touch.
+
+## Beyond the code
+
+Specialty coffee. Sustainable, non-intensive agriculture — my family works land in Umbria, and I care about who grows what, and how. Wine: [AIS](https://aisitalia.it/la-storia-di-ais/) member, sommelier in training, and quietly obsessed with [G.R.A.S.P.O.](https://www.graspo.wine/chi-siamo/), the people recovering ancient and near-extinct grape varieties for the sake of biodiversity. [Slow Food](https://www.slowfood.it/chi-siamo/che-cose-slow-food/), ethical finance, [microcredit](https://www.bancaetica.it/il-microcredito-per-linclusione-sociale-e-finanziaria/).
+
+I also write things down at [Medium](https://medium.com/@cherubinimatte).
+
+---
+
+Still mediocre 👀, just with much better tools 👍
