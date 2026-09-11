@@ -6,40 +6,46 @@
 
 ## INFORMAZIONI PERSONALI
 
-**Matteo Cherubini**
-Data e luogo di nascita: 27 marzo 1997, Firenze (Italia)
-Nazionalità: italiana
-Indirizzo: via Santa Gonda 108, 59100 Prato (PO), Italia
-Telefono: (+39) 327 6615664 · E-mail: cherubinimatte@gmail.com
-GitHub: [github.com/MatteoCherubini](https://github.com/MatteoCherubini/MatteoCherubini) · Medium: [medium.com/@cherubinimatte](https://medium.com/@cherubinimatte)
-Patente B, automunito
+**Matteo Cherubini**\
+Data e luogo di nascita: 27 marzo 1997, Firenze (Italia)\
+Nazionalità: italiana\
+Indirizzo: via Santa Gonda 108, 59100 Prato (PO), Italia\
+Telefono: (+39) 327 6615664 · E-mail: cherubinimatte@gmail.com\
+GitHub: [github.com/MatteoCherubini](https://github.com/MatteoCherubini) · Medium: [medium.com/@cherubinimatte](https://medium.com/@cherubinimatte)\
+Patenti A e B, automunito
 
 ---
 
 ## PROFILO PROFESSIONALE
 
-Sviluppatore full stack (Angular · NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in totale autonomia, inclusi progetti per enti pubblici regionali gestiti end-to-end. Oggi consulente tecnologico indipendente su AI applicata e knowledge management, con progettazione autonoma di sistemi che comprende sicurezza, LLM locali e automazione. Inglese C1 certificato. Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
+Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in totale autonomia, inclusi progetti per enti pubblici regionali gestiti dai requisiti alla consegna. Da maggio 2026 consulente ICT indipendente su AI applicata e knowledge management: sviluppo e sperimentazione pilota di sistemi che integrano sicurezza, LLM locali, automazione e revisione umana. Inglese C1 (autovalutazione QCER). Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
 
 ---
 
 ## ESPERIENZA PROFESSIONALE
 
-**Consulente tecnologico indipendente — attività professionale autonoma (P.IVA)**
-_maggio 2026 – oggi · Prato / da remoto_
+**Consulente ICT — attività professionale autonoma (P.IVA)**\
+_1 maggio 2026 – oggi · Prato / da remoto_
 
-- Integrazione di nuove tecnologie presso studi di commercialisti per l'automazione dei flussi di lavoro e la riduzione del carico operativo, con estensione ai domini ambientale, agronomico e finanziario.
-- Sviluppo di soluzioni AI: OCR, wiki dinamiche che si aggiornano automaticamente, sistemi di retrieval e indicizzazione evoluti rispetto al paradigma RAG, progettati per gli LLM di ultima generazione.
-- **Progetto "Knowledge Genome Orchestrator":** sistema di knowledge management assistito da AI, alternativo al paradigma RAG, in cui un agente LLM costruisce e mantiene una base di conoscenza cifrata con revisione umana. Progettazione autonoma dell'intera architettura — sicurezza (cifratura, gestione chiavi), pipeline agente e suite di test — con LLM locali e automazione. Co-progettato con LLM di ultima generazione.
-- Progettazione e gestione di un homelab self-hosted (Docker Compose, virtualizzazione, rete, sicurezza, LLM locale su GPU) come infrastruttura dei progetti personali.
+Consulente tecnologico indipendente su AI applicata e knowledge management: sistemi local-first in cui l'automazione è affiancata da un modello di sicurezza e dalla revisione umana.
 
-**Sviluppatore Front-End / Full-Stack — Gruppo Meta / M.E.T.A. S.r.l. (Gruppo ETT), poi Deda Next (Dedagroup)**
-_Software house specializzata in digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca; partner tecnologico di editori, biblioteche nazionali ed enti di ricerca_
-_gennaio 2023 – maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro agile parziale · contratto a tempo indeterminato (CCNL Metalmeccanici industria, impiegato)_
+- Sviluppo e sperimentazione pilota, presso uno studio di commercialisti (progetto pilota in corso), di automazioni dei flussi di lavoro assistite da AI, per ridurre la gestione documentale ripetitiva e liberare tempo professionale per analisi e valutazione.
+- **Pipeline OCR:** trasformazione di documenti scansionati e digitali in testo strutturato e ricercabile, a monte delle automazioni.
+- **Wiki dinamiche:** documentazione che un agente LLM mantiene aggiornata all'arrivo di nuove fonti, così che la conoscenza sia compilata una volta e mantenuta nel tempo, anziché ricostruita a ogni interrogazione come nel paradigma RAG.
+- **Knowledge Genome Orchestrator:** il sistema sviluppato in proprio alla base di questa attività — base di conoscenza distribuita, cifrata e multi-dominio (senza database vettoriale, pipeline di embedding né server di retrieval), pensata per l'estensione ai domini ambientale, agronomico e finanziario. Architettura agente a due fasi con un confine di fiducia esplicito: l'agente svolge solo il lavoro semantico, un post-processore deterministico e testato ne valida l'output prima che tocchi il filesystem.
+- **Modello di sicurezza e qualità:** cifratura AES-256 per dominio (git-crypt) con chiavi iniettate a runtime da un password manager e mai scritte su disco; revisione umana tramite pull request; suite di test deterministica, indipendente da modello, GPU e rete; architettura multi-dominio su submodule Git, orchestrata tramite webhook e inferenza LLM locale.
+- **Infrastruttura self-hosted:** stack Docker Compose (scelto rispetto a Kubernetes per semplicità operativa e rapidità di ripristino) con reverse proxy e gestione SSL, hosting Git privato (Forgejo), automazione dei flussi (n8n con PostgreSQL e Redis), accesso esterno sicuro tramite Cloudflare Tunnel e inferenza LLM locale (Ollama) su GPU NVIDIA; stack riproducibili e distribuibili in modo indipendente.
+- Strumenti: TypeScript su Bun, Docker Compose, Proxmox, Forgejo, n8n, Ollama, git-crypt, Vaultwarden, Obsidian; sistemi co-progettati con LLM di ultima generazione.
+
+**Sviluppatore Front-End — Gruppo Meta / M.E.T.A. S.r.l. (Gruppo ETT), poi Deda Next S.r.l. (Dedagroup)**\
+_Software house specializzata in digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca; partner tecnologico di editori, biblioteche nazionali ed enti di ricerca_\
+_24 gennaio 2023 – 1 maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro agile parziale · contratto a tempo indeterminato (CCNL Metalmeccanici industria, impiegato)_
 
 - Membro del team front-end (Angular); referente operativo sul cliente principale **Mondadori Education** per la piattaforma **HUB Scuola**, la principale piattaforma di didattica digitale per le scuole italiane: applicazione del nuovo stile grafico alle applicazioni Hub ed evolutive gestite in autonomia (nuove funzionalità, in particolare quiz ed esercizi interattivi integrati negli e-book).
 - Interpretazione di mock grafici come componenti Angular; progettazione e scrittura di interi nuovi flussi applicativi di varia complessità; interventi di qualità con focus su accessibilità (a11y, in linea con la direttiva UE 2016/2102), refactoring, debugging e unit testing.
 - Ammodernamento e refactoring su larga scala di progetti legacy (visori per file editoriali complessi e dinamici), in autonomia dal team di sviluppo e a stretto contatto con il team grafico/UX; studio applicato di regole di accessibilità e composizione del layout.
 - Sviluppo front-end su progetti per **istituzioni culturali e di ricerca di rilievo nazionale ed europeo**: la digitalizzazione delle collezioni della **Biblioteca Nazionale Centrale di Roma** (suite metaCMS, interoperabile con _Europeana_) e piattaforme per le infrastrutture di ricerca del **CNR** nelle Digital Humanities nell'ambito del progetto **H2IOSC** — finanziato da NextGenerationEU/PNRR e tassello italiano della **European Open Science Cloud** — tra cui ambienti di apprendimento e visualizzatori.
+- Progetti per **enti pubblici regionali** gestiti in autonomia, dalla raccolta dei requisiti alla consegna, in contatto diretto con il cliente.
 - Sviluppo e integrazione di API in NodeJS in collaborazione col team back-end; visualizzatori di dati (grafici e tabelle).
 - Esperienza infrastrutturale e di collaborazione con il back office: Docker, Postman, Tailscale; ecosistemi IT quali Proxmox (VM), Bitwarden (sicurezza), Obsidian (wiki/documentazione), n8n (automazione); repository strutturati con submodule.
 - Lavoro regolarmente in presenza tra le due sedi aziendali — Firenze (Le Murate) e Pisa (sede principale) — alternato a lavoro agile: contesto collaborativo con occasioni di contatto diretto con i clienti, pur operando come sviluppatore all'interno dei team tecnici.
@@ -48,19 +54,24 @@ _gennaio 2023 – maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro 
 
 ## ISTRUZIONE E FORMAZIONE
 
-**Laurea triennale in Informatica (L-31 — Scienze e tecnologie informatiche)**
-Università degli Studi di Firenze, Scuola di Scienze Matematiche, Fisiche e Naturali
-Durata ufficiale del corso: 3 anni · conseguita il **7 giugno 2022** · votazione 84/110
+**Laurea triennale in Informatica (L-31 — Scienze e tecnologie informatiche)**\
+Università degli Studi di Firenze, Scuola di Scienze Matematiche, Fisiche e Naturali\
+Durata ufficiale del corso: 3 anni · conseguita il **7 giugno 2022** · votazione 84/110\
 Tesi: _Progressive Web Application e Sistemi Operativi Web_ (relatore prof. R. Pugliese, correlatore prof. F. Tiezzi) — sviluppo di una PWA con Node.js, Ionic, Vue.js e Firebase.
 
 Percorso arricchito con esami scelti al di fuori del nucleo del corso, coerenti con il profilo attuale: **Computer Forensics** (sicurezza informatica e aspetti legali — radice accademica dell'attenzione compliance che ricorre nei progetti personali), Reti di Calcolatori, Programmazione Concorrente, Calcolo delle Probabilità e Statistica, **Progettazione e Produzione Multimediale**. Studio autonomo trasversale su sistemi operativi, interfacce/UX e accessibilità; approfondimenti personali in ambito finanziario e geopolitico.
+
+**Program for Intensive English (PIE) — Level 5 di 7 completato**\
+Indiana University–Purdue University Indianapolis (IUPUI), IU School of Liberal Arts — Indianapolis (Stati Uniti)\
+**22 agosto – 12 ottobre 2022** · sessione Fall 1, minimo 140 ore di lezione in aula\
+Level 5 di 7 completato in Reading–Writing e Listening–Speaking, media 88/100 (PIE Letter of Achievement, 13 ottobre 2022). Scrittura accademica, presentazione orale e discussione, in un contesto studentesco internazionale.
 
 ---
 
 ## COMPETENZE PERSONALI
 
-**Lingua madre:** italiano
-**Inglese:** C1 (Quadro Comune Europeo) — parlato e scritto. Certificazione: _Program for Intensive English_, livello 6/7, Indiana University–Purdue University Indianapolis (IUPUI), ottobre 2022, a seguito di un soggiorno di studio di ~3 mesi negli Stati Uniti.
+**Lingua madre:** italiano\
+**Inglese:** C1 (Quadro Comune Europeo, autovalutazione) — ascolto, lettura, scrittura, produzione e interazione orale. Formazione: _Program for Intensive English_, Indiana University–Purdue University Indianapolis (IUPUI), 22 agosto – 12 ottobre 2022: Level 5 di 7 completato in Reading–Writing e Listening–Speaking.
 
 **Competenze digitali**
 
@@ -87,10 +98,14 @@ Percorso arricchito con esami scelti al di fuori del nucleo del corso, coerenti 
 
 ## ULTERIORI INFORMAZIONI
 
-**Progetti personali:** _Knowledge Genome Orchestrator_ (sistema di knowledge management AI cifrato, alternativo al RAG, con revisione umana); _homelab personale_ (infrastruttura self-hosted su Docker Compose con LLM locale su GPU); _NETKIT_ (strumento TUI di network auditing con workflow di consenso legale, allineato a NIS2/GDPR). Repository su GitHub.
+**Progetti personali:** _NETKIT_ (strumento TUI di network auditing con workflow di consenso legale, allineato a NIS2/GDPR, in TypeScript su Bun e SQLite). Knowledge Genome Orchestrator e infrastruttura self-hosted sono descritti nell'esperienza di consulente ICT. Repository su GitHub.
+
 **Sviluppo professionale autonomo:** apprendimento continuo e auto-diretto sui propri ambiti di interesse (tecnologia, finanza, agronomia, cultura) attraverso canali e community internazionali — pubblicazioni tecniche, blog di settore, video, professionisti esteri — con selezione critica delle fonti. Pubblicazione di contenuti propri (Medium).
-**Esperienze all'estero:** soggiorno di studio negli Stati Uniti (Indianapolis, 2022) — Program for Intensive English, IUPUI.
-**Contesto imprenditoriale familiare:** amministratore delegato e legale rappresentante di **Casal de' Cherubini S.r.l.**, società agricola familiare che gestisce terreni agricoli e immobili in locazione (ruolo di firma, senza impegno operativo quotidiano). Familiarità diretta con la gestione patrimoniale e con il funzionamento delle società, maturata in questo contesto.
+
+**Esperienze all'estero:** soggiorno di studio negli Stati Uniti (Indianapolis, 22 agosto – 12 ottobre 2022) — Program for Intensive English, IUPUI.
+
+**Contesto imprenditoriale familiare:** amministratore delegato e legale rappresentante di **Casal de' Cherubini S.r.l.**, società agricola familiare che gestisce terreni agricoli e immobili in locazione in Umbria. Ruolo di firma esercitato in accordo con gli altri membri della famiglia, senza impegno operativo quotidiano.
+
 **Interessi (in coerenza con l'agenda ambientale, agroalimentare e di finanza sostenibile):**
 
 - **Agricoltura ecosostenibile ed etica e filiera agroalimentare di qualità** — tema vissuto anche dall'interno, attraverso la società agricola familiare (terreni e immobili); sostenitore di Slow Food e dei modelli produttivi non intensivi che valorizzano piccoli produttori e allevatori.
