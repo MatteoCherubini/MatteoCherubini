@@ -18,24 +18,11 @@ Patenti A e B, automunito
 
 ## PROFILO PROFESSIONALE
 
-Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in autonomia sulle funzionalità affidategli, con occasioni di confronto diretto con i clienti. Da maggio 2026 consulente ICT indipendente su AI applicata e knowledge management: sviluppo di sistemi che integrano sicurezza, LLM locali, automazione e revisione umana. Inglese C1 (autovalutazione QCER). Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
+Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in autonomia sulle funzionalità affidategli, con occasioni di confronto diretto con i clienti. Da maggio 2026 lavora a progetti indipendenti: un workflow documentato e testato che mantiene ordinate basi di conoscenza con l'aiuto di un modello linguistico e della revisione umana, l'infrastruttura self-hosted che lo esegue e uno strumento di audit di rete ancora in sviluppo. Inglese C1 (autovalutazione QCER). Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
 
 ---
 
 ## ESPERIENZA PROFESSIONALE
-
-**Consulente ICT — attività professionale autonoma (P.IVA)**\
-_1 maggio 2026 – oggi · Prato / da remoto_
-
-Consulente tecnologico indipendente su AI applicata e knowledge management: sistemi local-first in cui l'automazione è affiancata da un modello di sicurezza e dalla revisione umana.
-
-- Progetto pilota presso uno studio di commercialisti: gestione della conoscenza e dei flussi documentali assistita da AI, basata sui sistemi descritti di seguito, e piccoli interventi sulla rete. La collaborazione non è proseguita oltre la fase pilota.
-- **Pipeline OCR:** trasformazione di documenti scansionati e digitali in testo strutturato e ricercabile, a monte delle automazioni.
-- **Wiki dinamiche:** documentazione che un agente LLM mantiene aggiornata all'arrivo di nuove fonti, così che la conoscenza sia compilata una volta e mantenuta nel tempo, anziché ricostruita a ogni interrogazione come nel paradigma RAG.
-- **Knowledge Genome Orchestrator:** il sistema sviluppato in proprio alla base di questa attività — base di conoscenza distribuita, cifrata e multi-dominio (senza database vettoriale, pipeline di embedding né server di retrieval), pensata per l'estensione ai domini ambientale, agronomico e finanziario. Architettura agente a due fasi con un confine di fiducia esplicito: l'agente svolge solo il lavoro semantico, un post-processore deterministico e testato ne valida l'output prima che tocchi il filesystem.
-- **Modello di sicurezza e qualità:** cifratura AES-256 per dominio (git-crypt) con chiavi iniettate a runtime da un password manager e mai scritte su disco; revisione umana tramite pull request; suite di test deterministica, indipendente da modello, GPU e rete; architettura multi-dominio su submodule Git, orchestrata tramite webhook e inferenza LLM locale.
-- **Infrastruttura self-hosted:** stack Docker Compose (scelto rispetto a Kubernetes per semplicità operativa e rapidità di ripristino) con reverse proxy e gestione SSL, hosting Git privato (Forgejo), automazione dei flussi (n8n con PostgreSQL e Redis), accesso esterno sicuro tramite Cloudflare Tunnel e inferenza LLM locale (Ollama) su GPU NVIDIA; stack riproducibili e distribuibili in modo indipendente.
-- Strumenti: TypeScript su Bun, Docker Compose, Proxmox, Forgejo, n8n, Ollama, git-crypt, Vaultwarden, Obsidian; sistemi co-progettati con LLM di ultima generazione.
 
 **Sviluppatore Front-End — Gruppo Meta / M.E.T.A. S.r.l. (Gruppo ETT), poi Deda Next S.r.l. (Dedagroup)**\
 _Software house specializzata in digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca; partner tecnologico di editori, biblioteche nazionali ed enti di ricerca_\
@@ -68,6 +55,32 @@ Level 5 di 7 completato in Reading–Writing e Listening–Speaking, media 88/10
 
 ---
 
+## PROGETTI INDIPENDENTI
+
+**Knowledge Genome Orchestrator** · _maggio 2026 – oggi_\
+Workflow documentato e testato che mantiene ordinate basi di conoscenza personali: un modello linguistico legge ogni nuova nota e propone aggiornamenti a una wiki, script deterministici verificano ogni proposta e nulla viene salvato senza revisione umana.
+
+- Ogni proposta è validata da script deterministici prima di toccare qualsiasi file e arriva come pull request da accettare o rifiutare; le pagine conservano la propria storia invece di essere sovrascritte.
+- Test prima del codice: il codice generato deve arrivare con test che falliscono prima che l'implementazione esista; oltre 850 test automatici, indipendenti dal modello e dalla rete.
+- Quaderni privati cifrati, con chiavi custodite in un password manager e mai salvate su disco.
+- Ampia documentazione tecnica (18 documenti, compreso un registro di ogni difetto trovato e del perché).
+- Sperimentato in un progetto pilota non retribuito presso uno studio di commercialisti (gestione della conoscenza per i loro documenti, con piccoli interventi sulla rete); la collaborazione non è proseguita oltre la fase pilota.
+
+**Infrastruttura self-hosted** · _2026 – oggi_\
+Piccola infrastruttura domestica su due macchine, descritta come codice in un unico repository e documentata man mano che evolveva.
+
+- Tredici servizi in container gestiti con Docker Compose: hosting Git (Forgejo), automazione dei flussi (n8n con PostgreSQL e Redis), password manager, notifiche, reverse proxy.
+- Controllo degli aggiornamenti che segnala cosa aggiornare e con quale rischio, con un riepilogo in linguaggio semplice; gli aggiornamenti si applicano sempre a mano.
+- Rete divisa in zone separate dietro un firewall OPNsense; spegnimento ordinato delle due macchine a batteria durante i blackout.
+
+**NETKIT — strumento di audit di rete** · _2026 – oggi, in sviluppo_\
+Applicazione da terminale per aiutare i consulenti a controllare le reti di piccole aziende solo entro un perimetro e una finestra oraria concordati e firmati.
+
+- Consenso registrato e sigillato con un'impronta prima di ogni scansione; ogni indirizzo verificato rispetto al perimetro concordato; le scansioni si fermano da sole alla scadenza della finestra oraria.
+- Motore in TypeScript fortemente tipizzato su Bun, con SQLite e circa 200 test; l'interfaccia da terminale è la fase successiva. Non ancora usato su reti reali.
+
+---
+
 ## COMPETENZE PERSONALI
 
 **Lingua madre:** italiano\
@@ -75,30 +88,27 @@ Level 5 di 7 completato in Reading–Writing e Listening–Speaking, media 88/10
 
 **Competenze digitali**
 
-| Area                     | Competenze                                                                                                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Front-end                | Angular · sviluppo componenti da mock · accessibilità (a11y) · unit testing · refactoring legacy · Vue/Ionic (PWA)                                                                   |
-| Back-end e API           | NodeJS · sviluppo e integrazione API · Postman · TypeScript (tipizzazione forte) su Bun · SQLite                                                                                     |
-| Dati                     | Visualizzazione dati · grafici e tabelle                                                                                                                                             |
-| Infrastruttura e DevOps  | Docker Compose (stack multi-servizio) · Proxmox (VM) · Tailscale · n8n · Cloudflare Tunnel · Forgejo · Git avanzato (submodule, hook, PR-gated Git Flow) · Makefile/bash · test bats |
-| Sicurezza                | git-crypt (AES-256) · Bitwarden/Vaultwarden · gestione chiavi runtime zero-disk · validazione fail-closed · consapevolezza NIS2/GDPR                                                 |
-| Intelligenza artificiale | Workflow e co-progettazione con LLM · hosting ed esercizio di modelli locali (Ollama, quantizzazione) · architetture agente a due fasi · pattern LLM-wiki oltre il RAG · OCR         |
-| Design                   | Figma · Adobe XD                                                                                                                                                                     |
-| Documentazione           | Obsidian (wiki, Dataview, Marp) · documentazione tecnica di livello produttivo                                                                                                       |
+| Area                    | Competenze                                                                                                                                                                                   |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Front-end               | Angular · sviluppo componenti da mock · accessibilità (a11y) · unit testing · refactoring legacy · Vue/Ionic (PWA)                                                                           |
+| Back-end e API          | NodeJS · sviluppo e integrazione API · Postman · TypeScript (tipizzazione forte) su Bun · SQLite                                                                                             |
+| Dati                    | Visualizzazione dati · grafici e tabelle                                                                                                                                                     |
+| Infrastruttura e DevOps | Docker Compose (stack multi-servizio) · Proxmox (VM) · Tailscale · n8n · Cloudflare Tunnel · Forgejo · Git avanzato (submodule, hook, Git Flow con pull request) · Makefile/bash · test bats |
+| Automazione             | Flussi di automazione (n8n) · test automatici · sviluppo assistito da AI · modelli locali (Ollama) come strumento · Vaultwarden e git-crypt per chiavi e dati privati                        |
+| Design                  | Figma · Adobe XD                                                                                                                                                                             |
+| Documentazione          | Obsidian (wiki, Dataview, Marp) · documentazione tecnica estesa e versionata                                                                                                                 |
 
 **Competenze organizzative e trasversali**
 
 - Metodo algoritmico: ottimizzazione dei flussi di lavoro, semplificazione di problemi complessi, gestione simultanea di collegamenti, progetti, idee e tempistiche.
 - **Autonomia e lavoro in team, entrambi comprovati:** capacità di condurre un progetto end-to-end in totale indipendenza — dall'analisi dei requisiti alla consegna, come nei progetti personali auto-avviati — e di integrarsi in gruppi di lavoro strutturati (team front-end, back-end, grafico/UX) quando il compito lo richiede. La scelta tra i due modi è dettata dalle esigenze del progetto, non da una preferenza.
-- Spirito imprenditoriale: concezione, architettura e realizzazione autonoma di progetti complessi non commissionati (vedi progetti personali); avvio di un'attività professionale indipendente.
+- Spirito d'iniziativa: concezione, architettura e realizzazione autonoma di progetti complessi non commissionati (vedi progetti indipendenti).
 - Qualità del codice come standard personale: eleganza, pulizia, attenzione all'accessibilità.
 - Documentazione sistematica dei progetti (wiki, versionamento).
 
 ---
 
 ## ULTERIORI INFORMAZIONI
-
-**Progetti personali:** _NETKIT_ (strumento di network auditing in sviluppo, con workflow di consenso legale e attenzione ai requisiti GDPR/NIS2; motore in TypeScript su Bun e SQLite, interfaccia da completare). Knowledge Genome Orchestrator e infrastruttura self-hosted sono descritti nell'esperienza di consulente ICT. Repository su GitHub.
 
 **Sviluppo professionale autonomo:** apprendimento continuo e auto-diretto sui propri ambiti di interesse (tecnologia, finanza, agronomia, cultura) attraverso canali e community internazionali — pubblicazioni tecniche, blog di settore, video, professionisti esteri — con selezione critica delle fonti. Pubblicazione di contenuti propri (Medium).
 
