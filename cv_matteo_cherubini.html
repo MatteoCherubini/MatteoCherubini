@@ -6,7 +6,7 @@
     <title>Matteo Cherubini — Curriculum Vitae</title>
     <meta
       name="description"
-      content="Curriculum Vitae of Matteo Cherubini — front-end developer and independent consultant in applied AI and knowledge systems."
+      content="Curriculum Vitae of Matteo Cherubini — front-end developer with a focus on accessibility, automation and documentation."
     />
     <meta name="author" content="Matteo Cherubini" />
 
@@ -521,7 +521,7 @@
         .entry-body li:last-child {
           break-before: avoid;
         }
-        #s-lang {
+        section[aria-labelledby="s-lang"] {
           break-inside: avoid;
         }
         .entry + .entry {
@@ -587,7 +587,7 @@
       const CV = {
         person: {
           name: "Matteo Cherubini",
-          headline: "Front-end developer · Applied AI and knowledge systems",
+          headline: "Front-end developer · Accessibility, automation and documentation",
           facts: [
             { label: "Nationality", value: "Italian" },
             { label: "Date of birth", value: "27 March 1997" },
@@ -620,43 +620,12 @@
         },
 
         about: [
-          "Front-end developer (Angular) with three years' experience building the digital backbone of Italian education and cultural heritage: HUB Scuola, the main learning platform for Italian schools, and platforms for the National Central Library of Rome and CNR research infrastructures linked to the European Open Science Cloud — with a consistent focus on web accessibility.",
-          "Since May 2026 an independent ICT consultant in applied AI and knowledge management, developing systems that combine a security model, local LLM inference and human review. I work well both inside structured teams and autonomously on the features entrusted to me, with occasional direct contact with clients. English at C1 level (CEFR, self-assessed).",
-          "My method is algorithmic: break the problem down, optimise the flow, and document every decision so that the work can be reviewed, handed over and maintained.",
+          "Front-end developer (Angular) with three years' experience on the digital platforms of Italian education and cultural heritage: HUB Scuola, the main learning platform for Italian schools, and platforms for the National Central Library of Rome and CNR research infrastructures linked to the European Open Science Cloud — with a consistent focus on web accessibility.",
+          "Since leaving employment in May 2026 I have been working on independent projects: a documented, tested workflow that keeps knowledge bases organised with the help of a language model and human review, the self-hosted infrastructure that runs it, and a network audit tool still in development. I work well both inside structured teams and autonomously on the features entrusted to me, with occasional direct contact with clients. English at C1 level (CEFR, self-assessed).",
+          "My method is structure before product: break the problem down, document every decision, and check before trusting, so that the work can be reviewed, handed over and maintained.",
         ],
 
         work: [
-          {
-            title: "ICT consultant",
-            org: "Self-employed (VAT-registered freelance activity)",
-            dates: "1 May 2026 – Current",
-            place: "Prato, Italy",
-            lead: "Independent technology consultant in applied AI and knowledge management, building local-first systems in which automation is paired with a security model and human review.",
-            bullets: [
-              "Pilot with an accountancy firm: AI-assisted knowledge management for their document workflows, built on the systems described below, together with minor network fixes. The collaboration did not continue beyond the pilot phase.",
-              {
-                label: "OCR pipelines",
-                text: "turning scanned and digital documents into structured, searchable text that feeds the downstream automation.",
-              },
-              {
-                label: "Dynamic wikis",
-                text: "documentation that an LLM agent keeps up to date as new sources arrive, so that knowledge is compiled once and maintained, rather than re-derived at every query as in the standard RAG approach.",
-              },
-              {
-                label: "Knowledge Genome Orchestrator",
-                text: "the in-house system behind this work: a distributed, encrypted, multi-domain knowledge base (no vector database, no embedding pipeline, no retrieval server), designed to extend to environmental, agronomic and financial domains. Two-phase agent architecture with an explicit trust boundary: the agent performs semantic work only, and a deterministic, tested post-processor validates its output before anything touches the filesystem.",
-              },
-              {
-                label: "Security and quality model",
-                text: "per-domain AES-256 encryption (git-crypt) with keys injected at runtime from a password manager and never written to disk; human review gate through pull requests; deterministic test suite with no dependency on model, GPU or network; multi-domain layout on Git submodules, orchestrated via webhooks and local LLM inference.",
-              },
-              {
-                label: "Self-hosted infrastructure",
-                text: "Docker Compose stacks (chosen over Kubernetes for operational simplicity and fast recovery) with reverse proxy and SSL management, private Git hosting (Forgejo), workflow automation (n8n with PostgreSQL and Redis), secure external access via Cloudflare Tunnel, and local LLM inference (Ollama) on NVIDIA GPU; reproducible, independently deployable stacks.",
-              },
-              "Tools: TypeScript on Bun, Docker Compose, Proxmox, Forgejo, n8n, Ollama, git-crypt, Vaultwarden, Obsidian; systems co-designed with state-of-the-art LLMs.",
-            ],
-          },
           {
             title: "Front-end developer",
             org: "Gruppo Meta / M.E.T.A. S.r.l. (ETT Group), later Deda Next S.r.l. (Dedagroup)",
@@ -720,15 +689,37 @@
 
         projects: [
           {
-            title: "NETKIT — network field audit toolkit",
-            org: "Personal project, in development",
-            dates: "2026 – Current",
-            lead: "A terminal application for professional network auditing, designed for consultants and freelancers, in which the legal layer is a first-class component rather than an afterthought.",
+            title: "Knowledge Genome Orchestrator",
+            org: "Independent project",
+            dates: "May 2026 – Current",
+            lead: "A documented, tested workflow that keeps personal knowledge bases organised: a language model reads each new note and proposes updates to a wiki, plain scripts check every proposal, and nothing is saved without human review.",
             bullets: [
-              "Digital consent flow producing a non-repudiable SHA-256 hash of agreement, timestamp and scope.",
-              "Fail-closed “scope guard” validating every IP and subnet in real time, with time windows and exclusion lists.",
-              "Designed with GDPR and NIS2 requirements in mind; AI-assisted reporting planned to run locally, so that audit data never leaves the machine.",
-              "Core engine in strictly typed TypeScript on Bun (branded types, result pattern) with SQLite and around 200 tests; the terminal interface (OpenTUI) is the next phase.",
+              "Every proposal is validated by deterministic scripts before it touches any file, and reaches a person as a pull request to accept or refuse; pages keep their own history instead of being overwritten.",
+              "Tests before code: generated code must come with tests that fail before the implementation exists; over 850 automated tests with no dependency on the model or the network.",
+              "Private notebooks encrypted, with keys kept in a password manager and never stored on disk.",
+              "Extensive technical documentation (18 documents, including a register of every defect found and why).",
+              "Tried out in an unpaid pilot with an accountancy firm (knowledge management for their documents, with minor network fixes); the collaboration did not continue beyond the pilot phase.",
+            ],
+          },
+          {
+            title: "Self-hosted infrastructure",
+            org: "Independent project",
+            dates: "2026 – Current",
+            lead: "A small home infrastructure on two machines, described as code in a single repository and documented as it evolved.",
+            bullets: [
+              "Thirteen containerised services managed with Docker Compose: Git hosting (Forgejo), workflow automation (n8n with PostgreSQL and Redis), password manager, notifications, reverse proxy.",
+              "Update checker that reports what can be updated and at what risk, with a plain-language summary; updates are always applied by hand.",
+              "Network divided into separate zones behind an OPNsense firewall; ordered shutdown of the two machines on battery during power cuts.",
+            ],
+          },
+          {
+            title: "NETKIT — network audit tool",
+            org: "Independent project, in development",
+            dates: "2026 – Current",
+            lead: "A terminal application to help consultants check the networks of small companies only within an agreed, signed perimeter and time window.",
+            bullets: [
+              "Consent recorded and fingerprinted before any scan; every address checked against the agreed perimeter; scans stop automatically when the time window ends.",
+              "Core engine in strictly typed TypeScript on Bun with SQLite and around 200 tests; the terminal interface is the next phase. Not yet used on real networks.",
             ],
           },
         ],
@@ -759,19 +750,13 @@
             ],
           },
           {
-            group: "AI and emerging technologies",
+            group: "Automation and documentation",
             items: [
-              "principles of artificial intelligence",
-              "emergent technologies",
-              "use automatic programming",
-            ],
-          },
-          {
-            group: "Security and privacy",
-            items: [
-              "secrets and key management",
-              "privacy by design",
-              "GDPR and NIS2 awareness",
+              "workflow automation (n8n)",
+              "automated testing",
+              "AI-assisted development",
+              "technical documentation",
+              "Obsidian",
             ],
           },
           {
@@ -787,14 +772,13 @@
             ],
           },
           {
-            group: "Client and consulting",
+            group: "Collaboration",
             items: [
-              "identify customer requirements",
-              "propose ICT solutions to business problems",
-              "collect customer feedback on applications",
+              "work with design and UX teams",
+              "work with back-end teams",
+              "contribute technical proposals in client calls",
               "use online tools to collaborate",
               "adapt to changes in technological development plans",
-              "keep up with the latest information systems solutions",
             ],
           },
         ],
