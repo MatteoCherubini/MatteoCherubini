@@ -1,18 +1,18 @@
-Hi, I'm @MatteoCherubini — a developer from Tuscany who builds knowledge systems, secures them, and writes down what happened.
+Hi, I'm @MatteoCherubini — a front-end developer from Tuscany who likes structure, documentation, and writing down what happened.
 
-I studied Computer Science in Florence ([thesis on Progressive Web Apps](https://github.com/MatteoCherubini/text-editor-pwa/blob/master/presentazioneCherubini4.pdf), 2022), then spent three years on the front-end of Italian digital publishing and cultural heritage — school platforms, library collections, a lot of accessibility work — and in 2026 went independent to work on the things that kept getting postponed.
+I studied Computer Science in Florence ([thesis on Progressive Web Apps](https://github.com/MatteoCherubini/text-editor-pwa/blob/master/presentazioneCherubini4.pdf), 2022), then spent three years on the front-end of Italian digital publishing and cultural heritage — school platforms, library collections, a lot of accessibility work — and in 2026 left to work on my own projects, the ones that kept getting postponed.
 
 ## What I'm building
 
-**My Homelab** — A fully containerized self-hosted stack: reverse proxy, private Git, workflow automation, local LLM inference on GPU. Reproducible, modular, boring in the best possible way.
+**My Homelab** — two machines and thirteen containers described in a single repository: private Git, workflow automation, a password manager, notifications, and a small update checker that tells me what to update and at what risk. Reproducible, modular, boring in the best possible way.
 
-**Knowledge Genome Orchestrator** — a distributed, encrypted, multi-domain knowledge base. An LLM agent incrementally builds and maintains a persistent wiki instead of re-discovering everything at query time: no vector DB, no embedding pipeline, no retrieval server. Knowledge compiled once and kept current, rather than re-derived on every question. Two-phase agent architecture with a hard trust boundary between semantic work and deterministic post-processing, per-genome AES-256 encryption, keys injected at runtime that never touch disk, and a human review gate through pull requests.
+**Knowledge Genome Orchestrator** — notebooks that keep themselves in order. It is not an AI but a workflow around a language model: every new note is read once and filed into a wiki, plain scripts check every proposal, and nothing is saved until I approve it. Knowledge written down once and kept current, instead of searched for again on every question.
 
-**NETKIT** — a TUI for professional network auditing with a legal engine: non-repudiable consent hashes, a fail-closed scope guard, NIS2/GDPR alignment. Built on [Bun](https://bun.sh/) + OpenTUI.
+**NETKIT** — a terminal tool, still in development, to help consultants check the networks of small companies only within an agreed, signed perimeter and time window. Built on [Bun](https://bun.sh/).
 
 ## The stack, honestly
 
-TypeScript on Bun, Node.js, Angular. Docker, Proxmox, Forgejo, n8n. [Ollama](https://ollama.com/) for local models. git-crypt and Vaultwarden for anything that matters. [Obsidian](https://obsidian.md/) for everything I need to remember.
+TypeScript on Bun, Node.js, Angular. Docker, Proxmox, Forgejo, n8n. [Ollama](https://ollama.com/) for the occasional local model. Vaultwarden for passwords. [Obsidian](https://obsidian.md/) for everything I need to remember.
 
 ## What changed
 
@@ -20,7 +20,7 @@ I first became interested in this field around 2020. I read everything I could o
 
 What drew me in was the ideas, and that part hasn't changed. Models can generate implementations, but they don't understand design concepts, and they don't carry the consequences of the decisions they make. So the work moves up a level: understanding a system well enough to decide what can be delegated, what can be verified, and what still requires human judgment. Orchestration rather than implementation — but only if you've earned the understanding needed to orchestrate.
 
-So now I work where ideas still have room: local-first AI, knowledge that maintains itself, tools that take responsibility for what they touch.
+So now I spend my time where ideas still have room: structure before product, knowledge that stays in order, tools that take responsibility for what they touch.
 
 ## Beyond the code
 
