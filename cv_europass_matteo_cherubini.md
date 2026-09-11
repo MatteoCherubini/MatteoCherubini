@@ -18,7 +18,7 @@ Patenti A e B, automunito
 
 ## PROFILO PROFESSIONALE
 
-Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in totale autonomia, inclusi progetti per enti pubblici regionali gestiti dai requisiti alla consegna. Da maggio 2026 consulente ICT indipendente su AI applicata e knowledge management: sviluppo e sperimentazione pilota di sistemi che integrano sicurezza, LLM locali, automazione e revisione umana. Inglese C1 (autovalutazione QCER). Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
+Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in autonomia sulle funzionalità affidategli, con occasioni di confronto diretto con i clienti. Da maggio 2026 consulente ICT indipendente su AI applicata e knowledge management: sviluppo di sistemi che integrano sicurezza, LLM locali, automazione e revisione umana. Inglese C1 (autovalutazione QCER). Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
 
 ---
 
@@ -29,7 +29,7 @@ _1 maggio 2026 – oggi · Prato / da remoto_
 
 Consulente tecnologico indipendente su AI applicata e knowledge management: sistemi local-first in cui l'automazione è affiancata da un modello di sicurezza e dalla revisione umana.
 
-- Sviluppo e sperimentazione pilota, presso uno studio di commercialisti (progetto pilota in corso), di automazioni dei flussi di lavoro assistite da AI, per ridurre la gestione documentale ripetitiva e liberare tempo professionale per analisi e valutazione.
+- Progetto pilota presso uno studio di commercialisti: gestione della conoscenza e dei flussi documentali assistita da AI, basata sui sistemi descritti di seguito, e piccoli interventi sulla rete. La collaborazione non è proseguita oltre la fase pilota.
 - **Pipeline OCR:** trasformazione di documenti scansionati e digitali in testo strutturato e ricercabile, a monte delle automazioni.
 - **Wiki dinamiche:** documentazione che un agente LLM mantiene aggiornata all'arrivo di nuove fonti, così che la conoscenza sia compilata una volta e mantenuta nel tempo, anziché ricostruita a ogni interrogazione come nel paradigma RAG.
 - **Knowledge Genome Orchestrator:** il sistema sviluppato in proprio alla base di questa attività — base di conoscenza distribuita, cifrata e multi-dominio (senza database vettoriale, pipeline di embedding né server di retrieval), pensata per l'estensione ai domini ambientale, agronomico e finanziario. Architettura agente a due fasi con un confine di fiducia esplicito: l'agente svolge solo il lavoro semantico, un post-processore deterministico e testato ne valida l'output prima che tocchi il filesystem.
@@ -45,7 +45,7 @@ _24 gennaio 2023 – 1 maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con la
 - Interpretazione di mock grafici come componenti Angular; progettazione e scrittura di interi nuovi flussi applicativi di varia complessità; interventi di qualità con focus su accessibilità (a11y, in linea con la direttiva UE 2016/2102), refactoring, debugging e unit testing.
 - Ammodernamento e refactoring su larga scala di progetti legacy (visori per file editoriali complessi e dinamici), in autonomia dal team di sviluppo e a stretto contatto con il team grafico/UX; studio applicato di regole di accessibilità e composizione del layout.
 - Sviluppo front-end su progetti per **istituzioni culturali e di ricerca di rilievo nazionale ed europeo**: la digitalizzazione delle collezioni della **Biblioteca Nazionale Centrale di Roma** (suite metaCMS, interoperabile con _Europeana_) e piattaforme per le infrastrutture di ricerca del **CNR** nelle Digital Humanities nell'ambito del progetto **H2IOSC** — finanziato da NextGenerationEU/PNRR e tassello italiano della **European Open Science Cloud** — tra cui ambienti di apprendimento e visualizzatori.
-- Progetti per **enti pubblici regionali** gestiti in autonomia, dalla raccolta dei requisiti alla consegna, in contatto diretto con il cliente.
+- Partecipazione alle call di allineamento con il cliente, anche su progetti per **enti pubblici regionali**: proposte tecniche e, nei casi urgenti, interlocuzione diretta con il cliente.
 - Sviluppo e integrazione di API in NodeJS in collaborazione col team back-end; visualizzatori di dati (grafici e tabelle).
 - Esperienza infrastrutturale e di collaborazione con il back office: Docker, Postman, Tailscale; ecosistemi IT quali Proxmox (VM), Bitwarden (sicurezza), Obsidian (wiki/documentazione), n8n (automazione); repository strutturati con submodule.
 - Lavoro regolarmente in presenza tra le due sedi aziendali — Firenze (Le Murate) e Pisa (sede principale) — alternato a lavoro agile: contesto collaborativo con occasioni di contatto diretto con i clienti, pur operando come sviluppatore all'interno dei team tecnici.
@@ -59,7 +59,7 @@ Università degli Studi di Firenze, Scuola di Scienze Matematiche, Fisiche e Nat
 Durata ufficiale del corso: 3 anni · conseguita il **7 giugno 2022** · votazione 84/110\
 Tesi: _Progressive Web Application e Sistemi Operativi Web_ (relatore prof. R. Pugliese, correlatore prof. F. Tiezzi) — sviluppo di una PWA con Node.js, Ionic, Vue.js e Firebase.
 
-Percorso arricchito con esami scelti al di fuori del nucleo del corso, coerenti con il profilo attuale: **Computer Forensics** (sicurezza informatica e aspetti legali — radice accademica dell'attenzione compliance che ricorre nei progetti personali), Reti di Calcolatori, Programmazione Concorrente, Calcolo delle Probabilità e Statistica, **Progettazione e Produzione Multimediale**. Studio autonomo trasversale su sistemi operativi, interfacce/UX e accessibilità; approfondimenti personali in ambito finanziario e geopolitico.
+Esami a scelta dal percorso magistrale: **Progettazione e Produzione Multimediale** e Computer Forensics. Studio autonomo trasversale su sistemi operativi, interfacce/UX e accessibilità; approfondimenti personali in ambito finanziario e geopolitico.
 
 **Program for Intensive English (PIE) — Level 5 di 7 completato**\
 Indiana University–Purdue University Indianapolis (IUPUI), IU School of Liberal Arts — Indianapolis (Stati Uniti)\
@@ -89,7 +89,7 @@ Level 5 di 7 completato in Reading–Writing e Listening–Speaking, media 88/10
 **Competenze organizzative e trasversali**
 
 - Metodo algoritmico: ottimizzazione dei flussi di lavoro, semplificazione di problemi complessi, gestione simultanea di collegamenti, progetti, idee e tempistiche.
-- **Autonomia e lavoro in team, entrambi comprovati:** capacità di condurre un progetto end-to-end in totale indipendenza — dall'analisi dei requisiti alla consegna, come nei progetti regionali e nei progetti personali auto-avviati — e di integrarsi in gruppi di lavoro strutturati (team front-end, back-end, grafico/UX) quando il compito lo richiede. La scelta tra i due modi è dettata dalle esigenze del progetto, non da una preferenza.
+- **Autonomia e lavoro in team, entrambi comprovati:** capacità di condurre un progetto end-to-end in totale indipendenza — dall'analisi dei requisiti alla consegna, come nei progetti personali auto-avviati — e di integrarsi in gruppi di lavoro strutturati (team front-end, back-end, grafico/UX) quando il compito lo richiede. La scelta tra i due modi è dettata dalle esigenze del progetto, non da una preferenza.
 - Spirito imprenditoriale: concezione, architettura e realizzazione autonoma di progetti complessi non commissionati (vedi progetti personali); avvio di un'attività professionale indipendente.
 - Qualità del codice come standard personale: eleganza, pulizia, attenzione all'accessibilità.
 - Documentazione sistematica dei progetti (wiki, versionamento).
@@ -98,7 +98,7 @@ Level 5 di 7 completato in Reading–Writing e Listening–Speaking, media 88/10
 
 ## ULTERIORI INFORMAZIONI
 
-**Progetti personali:** _NETKIT_ (strumento TUI di network auditing con workflow di consenso legale, allineato a NIS2/GDPR, in TypeScript su Bun e SQLite). Knowledge Genome Orchestrator e infrastruttura self-hosted sono descritti nell'esperienza di consulente ICT. Repository su GitHub.
+**Progetti personali:** _NETKIT_ (strumento di network auditing in sviluppo, con workflow di consenso legale e attenzione ai requisiti GDPR/NIS2; motore in TypeScript su Bun e SQLite, interfaccia da completare). Knowledge Genome Orchestrator e infrastruttura self-hosted sono descritti nell'esperienza di consulente ICT. Repository su GitHub.
 
 **Sviluppo professionale autonomo:** apprendimento continuo e auto-diretto sui propri ambiti di interesse (tecnologia, finanza, agronomia, cultura) attraverso canali e community internazionali — pubblicazioni tecniche, blog di settore, video, professionisti esteri — con selezione critica delle fonti. Pubblicazione di contenuti propri (Medium).
 
