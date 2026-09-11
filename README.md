@@ -26,7 +26,11 @@ So now I work where ideas still have room: local-first AI, knowledge that mainta
 
 Specialty coffee. Sustainable, non-intensive agriculture — my family works land in Umbria, and I care about who grows what, and how. Wine: [AIS](https://aisitalia.it/la-storia-di-ais/) member, sommelier in training, and quietly obsessed with [G.R.A.S.P.O.](https://www.graspo.wine/chi-siamo/), the people recovering ancient and near-extinct grape varieties for the sake of biodiversity. [Slow Food](https://www.slowfood.it/chi-siamo/che-cose-slow-food/), ethical finance, [microcredit](https://www.bancaetica.it/il-microcredito-per-linclusione-sociale-e-finanziaria/).
 
+Italian is my mother tongue and I work in English every day. French is the language I'm learning now: A1 today, A2 is the next milestone.
+
 I also write things down at [Medium](https://medium.com/@cherubinimatte).
+
+CV: [PDF, English](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/cherubini_matteo_cv.pdf) · [Europass, Italian](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/cv_europass_matteo_cherubini.md)
 
 ---
 
