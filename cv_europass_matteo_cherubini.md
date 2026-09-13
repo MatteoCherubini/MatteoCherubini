@@ -113,7 +113,7 @@ Applicazione da terminale per aiutare i consulenti a controllare le reti di picc
 
 **Sviluppo professionale autonomo:** apprendimento continuo e auto-diretto sui propri ambiti di interesse (tecnologia, finanza, agronomia, cultura) attraverso canali e community internazionali — pubblicazioni tecniche, blog di settore, video, professionisti esteri — con selezione critica delle fonti.
 
-**Scrittura:** saggi personali su lavoro, metodo e infrastruttura self-hosted, scritti per un pubblico non specialistico (Medium).
+**Scrittura:** tre saggi pubblicati su Medium (settembre 2026), in inglese e per un pubblico non specialistico: sull'uscita dal primo lavoro e su cosa insegnano tre anni nell'editoria scolastica; sulle scelte dietro una piccola infrastruttura self-hosted; su un workflow documentato che mantiene aggiornate basi di conoscenza con revisione umana.
 
 **Esperienze all'estero:** soggiorno di studio negli Stati Uniti (Indianapolis, 22 agosto – 12 ottobre 2022) — Program for Intensive English, IUPUI.
 
