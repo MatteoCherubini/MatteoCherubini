@@ -72,7 +72,7 @@ Piccola infrastruttura domestica su due macchine, descritta come codice in un un
 - Tredici servizi in container gestiti con Docker Compose: hosting Git (Forgejo), automazione dei flussi (n8n con PostgreSQL e Redis), password manager, notifiche, reverse proxy.
 - Controllo degli aggiornamenti che segnala cosa aggiornare e con quale rischio, con un riepilogo in linguaggio semplice; gli aggiornamenti si applicano sempre a mano.
 - Rete divisa in zone separate dietro un firewall OPNsense; spegnimento ordinato delle due macchine a batteria durante i blackout.
-- Workstation riproducibile da un repository pubblico di dotfiles gestito con chezmoi: repository software, pacchetti, applicazioni, strumenti di sviluppo e configurazione dell'editor ripristinati su una macchina nuova con un solo comando; chiavi private fuori dal repository.
+- Workstation riproducibile da un repository di dotfiles gestito con chezmoi: repository software, pacchetti, applicazioni, strumenti di sviluppo e configurazione dell'editor ripristinati su una macchina nuova con un solo comando; chiavi private fuori dal repository.
 
 **NETKIT — strumento di audit di rete** · _2026 – oggi, in sviluppo_\
 Applicazione da terminale per aiutare i consulenti a controllare le reti di piccole aziende solo entro un perimetro e una finestra oraria concordati e firmati.
@@ -113,7 +113,7 @@ Applicazione da terminale per aiutare i consulenti a controllare le reti di picc
 
 **Sviluppo professionale autonomo:** apprendimento continuo e auto-diretto sui propri ambiti di interesse (tecnologia, finanza, agronomia, cultura) attraverso canali e community internazionali — pubblicazioni tecniche, blog di settore, video, professionisti esteri — con selezione critica delle fonti.
 
-**Scrittura:** tre saggi pubblicati su Medium (settembre 2026), in inglese e per un pubblico non specialistico: sull'uscita dal primo lavoro e su cosa insegnano tre anni nell'editoria scolastica; sulle scelte dietro una piccola infrastruttura self-hosted; su un workflow documentato che mantiene aggiornate basi di conoscenza con revisione umana.
+**Scrittura:** saggi pubblicati su Medium, in inglese e per un pubblico non specialistico: sull'uscita dal primo lavoro e su cosa insegnano tre anni nell'editoria scolastica; sulle scelte dietro una piccola infrastruttura self-hosted; su un workflow documentato che mantiene aggiornate basi di conoscenza con revisione umana.
 
 **Esperienze all'estero:** soggiorno di studio negli Stati Uniti (Indianapolis, 22 agosto – 12 ottobre 2022) — Program for Intensive English, IUPUI.
 
