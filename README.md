@@ -4,11 +4,9 @@ I studied Computer Science in Florence ([thesis on Progressive Web Apps](https:/
 
 ## What I'm building
 
-**My Homelab** — two machines and thirteen containers described in a single repository: private Git, workflow automation, a password manager, notifications, and a small update checker that tells me what to update and at what risk. Reproducible, modular, boring in the best possible way.
+**My Homelab** — two machines and thirteen containers described in a single repository: private Git, workflow automation, a password manager, notifications, and a small update checker that tells me what to update and at what risk. Reproducible, modular, boring in the best possible way. The laptop that drives it all is reproducible too, from scratch with [chezmoi](https://www.chezmoi.io/) and a single command.
 
 **Knowledge Genome Orchestrator** — notebooks that keep themselves in order. It is not an AI but a workflow around a language model: every new note is read once and filed into a wiki, plain scripts check every proposal, and nothing is saved until I approve it. Knowledge written down once and kept current, instead of searched for again on every question.
-
-**My dotfiles** — the laptop itself, reproducible from scratch with [chezmoi](https://www.chezmoi.io/): repositories, packages, applications, development tools and editor configuration restored with a single command. Private keys stay out of it.
 
 **NETKIT** — a terminal tool, still in development, to help consultants check the networks of small companies only within an agreed, signed perimeter and time window. Built on [Bun](https://bun.sh/).
 
@@ -30,7 +28,7 @@ Specialty coffee. Sustainable, non-intensive agriculture — my family works lan
 
 Italian is my mother tongue and I work in English every day. French is the language I'm learning now: A1 today, A2 is the next milestone.
 
-I write things down at [Medium](https://medium.com/@cherubinimatte): three essays so far, on leaving my first job, on the infrastructure I run at home, and on the workflow that keeps my notes in order.
+I write things down at [Medium](https://medium.com/@cherubinimatte): essays on leaving my first job, on the infrastructure I run at home, and on the workflow that keeps my notes in order. More as I get round to publishing them.
 
 CV: [PDF, English](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/cherubini_matteo_cv.pdf) · [Europass, Italian](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/cv_europass_matteo_cherubini.md)
 
