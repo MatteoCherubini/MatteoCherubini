@@ -1,6 +1,6 @@
 Hi, I'm @MatteoCherubini — a front-end developer from Tuscany who likes structure, documentation, and writing down what happened.
 
-I studied Computer Science in Florence ([thesis on Progressive Web Apps](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/matteo_cherubini_thesis_abstract_2022_it.pdf), 2022), then spent three years on the front-end of Italian digital publishing and cultural heritage — school platforms, library collections, a lot of accessibility work — and in 2026 left to work on my own projects, the ones that kept getting postponed.
+I studied Computer Science in Florence ([thesis on Progressive Web Apps](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/MatteoCherubiniThesisAbstract2022IT.pdf), 2022), then spent three years on the front-end of Italian digital publishing and cultural heritage — school platforms, library collections, a lot of accessibility work — and in 2026 left to work on my own projects, the ones that kept getting postponed.
 
 ## What I'm building
 
@@ -30,7 +30,7 @@ Italian is my mother tongue and I work in English every day. French is the langu
 
 I write things down at [Medium](https://medium.com/@cherubinimatte): essays on leaving my first job, on the infrastructure I run at home, and on the workflow that keeps my notes in order. More as I get round to publishing them.
 
-CV, Europass format: [PDF, English](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/matteo_cherubini_cv_europass_en.pdf) · [Markdown, Italian](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/matteo_cherubini_cv_europass_it.md)
+CV, Europass format: [PDF, English](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/MatteoCherubiniCVEuropassEN.pdf) · [Markdown, Italian](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/MatteoCherubiniCVEuropassIT.md)
 
 ---
 
