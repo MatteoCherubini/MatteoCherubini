@@ -30,7 +30,7 @@ Italian is my mother tongue and I work in English every day. French is the langu
 
 I write things down at [Medium](https://medium.com/@cherubinimatte): essays on leaving my first job, on the infrastructure I run at home, and on the workflow that keeps my notes in order. More as I get round to publishing them.
 
-CV: [PDF, English](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/cherubini_matteo_cv.pdf) · [Europass, Italian](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/cv_europass_matteo_cherubini.md)
+CV, Europass format: [PDF, English](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/matteo_cherubini_cv_europass_en.pdf) · [Markdown, Italian](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/matteo_cherubini_cv_europass_it.md)
 
 ---
 
