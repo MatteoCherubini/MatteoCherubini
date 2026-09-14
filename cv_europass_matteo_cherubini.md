@@ -6,40 +6,33 @@
 
 ## INFORMAZIONI PERSONALI
 
-**Matteo Cherubini**
-Data e luogo di nascita: 27 marzo 1997, Firenze (Italia)
-Nazionalità: italiana
-Indirizzo: via Santa Gonda 108, 59100 Prato (PO), Italia
-Telefono: (+39) 327 6615664 · E-mail: cherubinimatte@gmail.com
-GitHub: [github.com/MatteoCherubini](https://github.com/MatteoCherubini/MatteoCherubini) · Medium: [medium.com/@cherubinimatte](https://medium.com/@cherubinimatte)
-Patente B, automunito
+**Matteo Cherubini**\
+Data e luogo di nascita: 27 marzo 1997, Firenze (Italia)\
+Nazionalità: italiana\
+Indirizzo: via Santa Gonda 108, 59100 Prato (PO), Italia\
+Telefono: (+39) 327 6615664 · E-mail: cherubinimatte@gmail.com\
+GitHub: [github.com/MatteoCherubini](https://github.com/MatteoCherubini) · Medium: [medium.com/@cherubinimatte](https://medium.com/@cherubinimatte)\
+Patenti A e B, automunito
 
 ---
 
 ## PROFILO PROFESSIONALE
 
-Sviluppatore full stack (Angular · NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in totale autonomia, inclusi progetti per enti pubblici regionali gestiti end-to-end. Oggi consulente tecnologico indipendente su AI applicata e knowledge management, con progettazione autonoma di sistemi che comprende sicurezza, LLM locali e automazione. Inglese C1 certificato. Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
+Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di esperienza presso una software house italiana leader nella digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca (Gruppo Meta/ETT, poi Deda Next). Ha contribuito, lato front-end, a piattaforme di rilievo nazionale ed europeo — dalla principale piattaforma didattica per le scuole italiane (HUB Scuola, Mondadori Education) a progetti per istituzioni culturali e infrastrutture di ricerca del CNR legate alla European Open Science Cloud — con forte attenzione all'accessibilità (a11y). In quel ruolo ha operato sia in team strutturati sia in autonomia sulle funzionalità affidategli, con occasioni di confronto diretto con i clienti. Da maggio 2026 lavora a progetti indipendenti: un workflow documentato e testato che mantiene ordinate basi di conoscenza con l'aiuto di un modello linguistico e della revisione umana, l'infrastruttura self-hosted che lo esegue e uno strumento di audit di rete ancora in sviluppo. Inglese C1 (autovalutazione QCER). Approccio fondato su un metodo algoritmico e su una marcata capacità di self-direction: darsi obiettivi, scegliere le fonti e portarli a termine senza supervisione, integrandosi nel gruppo quando il lavoro lo richiede.
 
 ---
 
 ## ESPERIENZA PROFESSIONALE
 
-**Consulente tecnologico indipendente — attività professionale autonoma (P.IVA)**
-_maggio 2026 – oggi · Prato / da remoto_
-
-- Integrazione di nuove tecnologie presso studi di commercialisti per l'automazione dei flussi di lavoro e la riduzione del carico operativo, con estensione ai domini ambientale, agronomico e finanziario.
-- Sviluppo di soluzioni AI: OCR, wiki dinamiche che si aggiornano automaticamente, sistemi di retrieval e indicizzazione evoluti rispetto al paradigma RAG, progettati per gli LLM di ultima generazione.
-- **Progetto "Knowledge Genome Orchestrator":** sistema di knowledge management assistito da AI, alternativo al paradigma RAG, in cui un agente LLM costruisce e mantiene una base di conoscenza cifrata con revisione umana. Progettazione autonoma dell'intera architettura — sicurezza (cifratura, gestione chiavi), pipeline agente e suite di test — con LLM locali e automazione. Co-progettato con LLM di ultima generazione.
-- Progettazione e gestione di un homelab self-hosted (Docker Compose, virtualizzazione, rete, sicurezza, LLM locale su GPU) come infrastruttura dei progetti personali.
-
-**Sviluppatore Front-End / Full-Stack — Gruppo Meta / M.E.T.A. S.r.l. (Gruppo ETT), poi Deda Next (Dedagroup)**
-_Software house specializzata in digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca; partner tecnologico di editori, biblioteche nazionali ed enti di ricerca_
-_gennaio 2023 – maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro agile parziale · contratto a tempo indeterminato (CCNL Metalmeccanici industria, impiegato)_
+**Sviluppatore Front-End — Gruppo Meta / M.E.T.A. S.r.l. (Gruppo ETT), poi Deda Next S.r.l. (Dedagroup)**\
+_Software house specializzata in digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca; partner tecnologico di editori, biblioteche nazionali ed enti di ricerca_\
+_24 gennaio 2023 – 1 maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro agile parziale · contratto a tempo indeterminato (CCNL Metalmeccanici industria, impiegato)_
 
 - Membro del team front-end (Angular); referente operativo sul cliente principale **Mondadori Education** per la piattaforma **HUB Scuola**, la principale piattaforma di didattica digitale per le scuole italiane: applicazione del nuovo stile grafico alle applicazioni Hub ed evolutive gestite in autonomia (nuove funzionalità, in particolare quiz ed esercizi interattivi integrati negli e-book).
 - Interpretazione di mock grafici come componenti Angular; progettazione e scrittura di interi nuovi flussi applicativi di varia complessità; interventi di qualità con focus su accessibilità (a11y, in linea con la direttiva UE 2016/2102), refactoring, debugging e unit testing.
 - Ammodernamento e refactoring su larga scala di progetti legacy (visori per file editoriali complessi e dinamici), in autonomia dal team di sviluppo e a stretto contatto con il team grafico/UX; studio applicato di regole di accessibilità e composizione del layout.
 - Sviluppo front-end su progetti per **istituzioni culturali e di ricerca di rilievo nazionale ed europeo**: la digitalizzazione delle collezioni della **Biblioteca Nazionale Centrale di Roma** (suite metaCMS, interoperabile con _Europeana_) e piattaforme per le infrastrutture di ricerca del **CNR** nelle Digital Humanities nell'ambito del progetto **H2IOSC** — finanziato da NextGenerationEU/PNRR e tassello italiano della **European Open Science Cloud** — tra cui ambienti di apprendimento e visualizzatori.
+- Partecipazione alle call di allineamento con il cliente, anche su progetti per **enti pubblici regionali**: proposte tecniche e, nei casi urgenti, interlocuzione diretta con il cliente.
 - Sviluppo e integrazione di API in NodeJS in collaborazione col team back-end; visualizzatori di dati (grafici e tabelle).
 - Esperienza infrastrutturale e di collaborazione con il back office: Docker, Postman, Tailscale; ecosistemi IT quali Proxmox (VM), Bitwarden (sicurezza), Obsidian (wiki/documentazione), n8n (automazione); repository strutturati con submodule.
 - Lavoro regolarmente in presenza tra le due sedi aziendali — Firenze (Le Murate) e Pisa (sede principale) — alternato a lavoro agile: contesto collaborativo con occasioni di contatto diretto con i clienti, pur operando come sviluppatore all'interno dei team tecnici.
@@ -48,38 +41,69 @@ _gennaio 2023 – maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro 
 
 ## ISTRUZIONE E FORMAZIONE
 
-**Laurea triennale in Informatica (L-31 — Scienze e tecnologie informatiche)**
-Università degli Studi di Firenze, Scuola di Scienze Matematiche, Fisiche e Naturali
-Durata ufficiale del corso: 3 anni · conseguita il **7 giugno 2022** · votazione 84/110
+**Laurea triennale in Informatica (L-31 — Scienze e tecnologie informatiche)**\
+Università degli Studi di Firenze, Scuola di Scienze Matematiche, Fisiche e Naturali\
+Durata ufficiale del corso: 3 anni · conseguita il **7 giugno 2022** · votazione 84/110\
 Tesi: _Progressive Web Application e Sistemi Operativi Web_ (relatore prof. R. Pugliese, correlatore prof. F. Tiezzi) — sviluppo di una PWA con Node.js, Ionic, Vue.js e Firebase.
 
-Percorso arricchito con esami scelti al di fuori del nucleo del corso, coerenti con il profilo attuale: **Computer Forensics** (sicurezza informatica e aspetti legali — radice accademica dell'attenzione compliance che ricorre nei progetti personali), Reti di Calcolatori, Programmazione Concorrente, Calcolo delle Probabilità e Statistica, **Progettazione e Produzione Multimediale**. Studio autonomo trasversale su sistemi operativi, interfacce/UX e accessibilità; approfondimenti personali in ambito finanziario e geopolitico.
+Esami a scelta dal percorso magistrale: **Progettazione e Produzione Multimediale** e Computer Forensics. Studio autonomo trasversale su sistemi operativi, interfacce/UX e accessibilità; approfondimenti personali in ambito finanziario e geopolitico.
+
+**Program for Intensive English (PIE) — Level 5 di 7 completato**\
+Indiana University–Purdue University Indianapolis (IUPUI), IU School of Liberal Arts — Indianapolis (Stati Uniti)\
+**22 agosto – 12 ottobre 2022** · sessione Fall 1, minimo 140 ore di lezione in aula\
+Level 5 di 7 completato in Reading–Writing e Listening–Speaking, media 88/100 (PIE Letter of Achievement, 13 ottobre 2022). Scrittura accademica, presentazione orale e discussione, in un contesto studentesco internazionale.
+
+---
+
+## PROGETTI INDIPENDENTI
+
+**Knowledge Genome Orchestrator** · _maggio 2026 – oggi_\
+Workflow documentato e testato che mantiene ordinate basi di conoscenza personali: un modello linguistico legge ogni nuova nota e propone aggiornamenti a una wiki, script deterministici verificano ogni proposta e nulla viene salvato senza revisione umana.
+
+- Ogni proposta è validata da script deterministici prima di toccare qualsiasi file e arriva come pull request da accettare o rifiutare; le pagine conservano la propria storia invece di essere sovrascritte.
+- Test prima del codice: il codice generato deve arrivare con test che falliscono prima che l'implementazione esista; oltre 850 test automatici, indipendenti dal modello e dalla rete.
+- Quaderni privati cifrati, con chiavi custodite in un password manager e mai salvate su disco.
+- Ampia documentazione tecnica (18 documenti, compreso un registro di ogni difetto trovato e del perché).
+- Sperimentato in un progetto pilota non retribuito presso uno studio di commercialisti (gestione della conoscenza per i loro documenti, con piccoli interventi sulla rete); la collaborazione non è proseguita oltre la fase pilota.
+
+**Infrastruttura self-hosted** · _2026 – oggi_\
+Piccola infrastruttura domestica su due macchine, descritta come codice in un unico repository e documentata man mano che evolveva.
+
+- Tredici servizi in container gestiti con Docker Compose: hosting Git (Forgejo), automazione dei flussi (n8n con PostgreSQL e Redis), password manager, notifiche, reverse proxy.
+- Controllo degli aggiornamenti che segnala cosa aggiornare e con quale rischio, con un riepilogo in linguaggio semplice; gli aggiornamenti si applicano sempre a mano.
+- Rete divisa in zone separate dietro un firewall OPNsense; spegnimento ordinato delle due macchine a batteria durante i blackout.
+- Workstation riproducibile da un repository di dotfiles gestito con chezmoi: repository software, pacchetti, applicazioni, strumenti di sviluppo e configurazione dell'editor ripristinati su una macchina nuova con un solo comando; chiavi private fuori dal repository.
+
+**NETKIT — strumento di audit di rete** · _2026 – oggi, in sviluppo_\
+Applicazione da terminale per aiutare i consulenti a controllare le reti di piccole aziende solo entro un perimetro e una finestra oraria concordati e firmati.
+
+- Consenso registrato e sigillato con un'impronta prima di ogni scansione; ogni indirizzo verificato rispetto al perimetro concordato; le scansioni si fermano da sole alla scadenza della finestra oraria.
+- Motore in TypeScript fortemente tipizzato su Bun, con SQLite e circa 200 test; l'interfaccia da terminale è la fase successiva. Non ancora usato su reti reali.
 
 ---
 
 ## COMPETENZE PERSONALI
 
-**Lingua madre:** italiano
-**Inglese:** C1 (Quadro Comune Europeo) — parlato e scritto. Certificazione: _Program for Intensive English_, livello 6/7, Indiana University–Purdue University Indianapolis (IUPUI), ottobre 2022, a seguito di un soggiorno di studio di ~3 mesi negli Stati Uniti.
+**Lingua madre:** italiano\
+**Inglese:** C1 (Quadro Comune Europeo, autovalutazione) — ascolto, lettura, scrittura, produzione e interazione orale. Formazione: _Program for Intensive English_, Indiana University–Purdue University Indianapolis (IUPUI), 22 agosto – 12 ottobre 2022: Level 5 di 7 completato in Reading–Writing e Listening–Speaking.
 
 **Competenze digitali**
 
-| Area                     | Competenze                                                                                                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Front-end                | Angular · sviluppo componenti da mock · accessibilità (a11y) · unit testing · refactoring legacy · Vue/Ionic (PWA)                                                                   |
-| Back-end e API           | NodeJS · sviluppo e integrazione API · Postman · TypeScript (tipizzazione forte) su Bun · SQLite                                                                                     |
-| Dati                     | Visualizzazione dati · grafici e tabelle                                                                                                                                             |
-| Infrastruttura e DevOps  | Docker Compose (stack multi-servizio) · Proxmox (VM) · Tailscale · n8n · Cloudflare Tunnel · Forgejo · Git avanzato (submodule, hook, PR-gated Git Flow) · Makefile/bash · test bats |
-| Sicurezza                | git-crypt (AES-256) · Bitwarden/Vaultwarden · gestione chiavi runtime zero-disk · validazione fail-closed · consapevolezza NIS2/GDPR                                                 |
-| Intelligenza artificiale | Workflow e co-progettazione con LLM · hosting ed esercizio di modelli locali (Ollama, quantizzazione) · architetture agente a due fasi · pattern LLM-wiki oltre il RAG · OCR         |
-| Design                   | Figma · Adobe XD                                                                                                                                                                     |
-| Documentazione           | Obsidian (wiki, Dataview, Marp) · documentazione tecnica di livello produttivo                                                                                                       |
+| Area                    | Competenze                                                                                                                                                                                   |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Front-end               | Angular · sviluppo componenti da mock · accessibilità (a11y) · unit testing · refactoring legacy · Vue/Ionic (PWA)                                                                           |
+| Back-end e API          | NodeJS · sviluppo e integrazione API · Postman · TypeScript (tipizzazione forte) su Bun · SQLite                                                                                             |
+| Dati                    | Visualizzazione dati · grafici e tabelle                                                                                                                                                     |
+| Infrastruttura e DevOps | Docker Compose (stack multi-servizio) · Proxmox (VM) · Tailscale · n8n · Cloudflare Tunnel · Forgejo · Git avanzato (submodule, hook, Git Flow con pull request) · Makefile/bash · test bats |
+| Automazione             | Flussi di automazione (n8n) · test automatici · sviluppo assistito da AI · modelli locali (Ollama) come strumento · Vaultwarden e git-crypt per chiavi e dati privati                        |
+| Design                  | Figma · Adobe XD                                                                                                                                                                             |
+| Documentazione          | Obsidian (wiki, Dataview, Marp) · documentazione tecnica estesa e versionata                                                                                                                 |
 
 **Competenze organizzative e trasversali**
 
 - Metodo algoritmico: ottimizzazione dei flussi di lavoro, semplificazione di problemi complessi, gestione simultanea di collegamenti, progetti, idee e tempistiche.
-- **Autonomia e lavoro in team, entrambi comprovati:** capacità di condurre un progetto end-to-end in totale indipendenza — dall'analisi dei requisiti alla consegna, come nei progetti regionali e nei progetti personali auto-avviati — e di integrarsi in gruppi di lavoro strutturati (team front-end, back-end, grafico/UX) quando il compito lo richiede. La scelta tra i due modi è dettata dalle esigenze del progetto, non da una preferenza.
-- Spirito imprenditoriale: concezione, architettura e realizzazione autonoma di progetti complessi non commissionati (vedi progetti personali); avvio di un'attività professionale indipendente.
+- **Autonomia e lavoro in team, entrambi comprovati:** capacità di condurre un progetto end-to-end in totale indipendenza — dall'analisi dei requisiti alla consegna, come nei progetti personali auto-avviati — e di integrarsi in gruppi di lavoro strutturati (team front-end, back-end, grafico/UX) quando il compito lo richiede. La scelta tra i due modi è dettata dalle esigenze del progetto, non da una preferenza.
+- Spirito d'iniziativa: concezione, architettura e realizzazione autonoma di progetti complessi non commissionati (vedi progetti indipendenti).
 - Qualità del codice come standard personale: eleganza, pulizia, attenzione all'accessibilità.
 - Documentazione sistematica dei progetti (wiki, versionamento).
 
@@ -87,10 +111,14 @@ Percorso arricchito con esami scelti al di fuori del nucleo del corso, coerenti 
 
 ## ULTERIORI INFORMAZIONI
 
-**Progetti personali:** _Knowledge Genome Orchestrator_ (sistema di knowledge management AI cifrato, alternativo al RAG, con revisione umana); _homelab personale_ (infrastruttura self-hosted su Docker Compose con LLM locale su GPU); _NETKIT_ (strumento TUI di network auditing con workflow di consenso legale, allineato a NIS2/GDPR). Repository su GitHub.
-**Sviluppo professionale autonomo:** apprendimento continuo e auto-diretto sui propri ambiti di interesse (tecnologia, finanza, agronomia, cultura) attraverso canali e community internazionali — pubblicazioni tecniche, blog di settore, video, professionisti esteri — con selezione critica delle fonti. Pubblicazione di contenuti propri (Medium).
-**Esperienze all'estero:** soggiorno di studio negli Stati Uniti (Indianapolis, 2022) — Program for Intensive English, IUPUI.
-**Contesto imprenditoriale familiare:** amministratore delegato e legale rappresentante di **Casal de' Cherubini S.r.l.**, società agricola familiare che gestisce terreni agricoli e immobili in locazione (ruolo di firma, senza impegno operativo quotidiano). Familiarità diretta con la gestione patrimoniale e con il funzionamento delle società, maturata in questo contesto.
+**Sviluppo professionale autonomo:** apprendimento continuo e auto-diretto sui propri ambiti di interesse (tecnologia, finanza, agronomia, cultura) attraverso canali e community internazionali — pubblicazioni tecniche, blog di settore, video, professionisti esteri — con selezione critica delle fonti.
+
+**Scrittura:** saggi pubblicati su Medium, in inglese e per un pubblico non specialistico: sull'uscita dal primo lavoro e su cosa insegnano tre anni nell'editoria scolastica; sulle scelte dietro una piccola infrastruttura self-hosted; su un workflow documentato che mantiene aggiornate basi di conoscenza con revisione umana.
+
+**Esperienze all'estero:** soggiorno di studio negli Stati Uniti (Indianapolis, 22 agosto – 12 ottobre 2022) — Program for Intensive English, IUPUI.
+
+**Contesto imprenditoriale familiare:** amministratore delegato e legale rappresentante di **Casal de' Cherubini S.r.l.**, società agricola familiare che gestisce terreni agricoli e immobili in locazione in Umbria. Ruolo di firma esercitato in accordo con gli altri membri della famiglia, senza impegno operativo quotidiano.
+
 **Interessi (in coerenza con l'agenda ambientale, agroalimentare e di finanza sostenibile):**
 
 - **Agricoltura ecosostenibile ed etica e filiera agroalimentare di qualità** — tema vissuto anche dall'interno, attraverso la società agricola familiare (terreni e immobili); sostenitore di Slow Food e dei modelli produttivi non intensivi che valorizzano piccoli produttori e allevatori.

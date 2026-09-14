@@ -6,7 +6,7 @@
     <title>Matteo Cherubini — Curriculum Vitae</title>
     <meta
       name="description"
-      content="Curriculum Vitae of Matteo Cherubini — front-end developer and independent consultant in applied AI and knowledge systems."
+      content="Curriculum Vitae of Matteo Cherubini — front-end developer with a focus on accessibility, automation and documentation."
     />
     <meta name="author" content="Matteo Cherubini" />
 
@@ -317,6 +317,10 @@
         position: relative;
         text-wrap: pretty;
       }
+      .entry-body li strong {
+        font-weight: 700;
+        color: var(--ink);
+      }
       .entry-body li::before {
         content: "";
         position: absolute;
@@ -503,6 +507,22 @@
         }
         .entry {
           padding-bottom: 8pt;
+          /* long entries may span pages; headings stay with their text */
+          break-inside: auto;
+        }
+        .entry-title,
+        .entry-org,
+        .entry-lead {
+          break-after: avoid;
+        }
+        .entry-body li {
+          break-inside: avoid;
+        }
+        .entry-body li:last-child {
+          break-before: avoid;
+        }
+        section[aria-labelledby="s-lang"] {
+          break-inside: avoid;
         }
         .entry + .entry {
           padding-top: 8pt;
@@ -567,7 +587,7 @@
       const CV = {
         person: {
           name: "Matteo Cherubini",
-          headline: "Front-end developer · Applied AI and knowledge systems",
+          headline: "Front-end developer · Accessibility, automation and documentation",
           facts: [
             { label: "Nationality", value: "Italian" },
             { label: "Date of birth", value: "27 March 1997" },
@@ -600,9 +620,9 @@
         },
 
         about: [
-          "Front-end developer (Angular) with three years' experience building the digital backbone of Italian education and cultural heritage: HUB Scuola, the main learning platform for Italian schools, and platforms for the National Central Library of Rome and CNR research infrastructures linked to the European Open Science Cloud — with a consistent focus on web accessibility.",
-          "Now an independent consultant in applied AI and knowledge management, designing systems end-to-end, from the security model to local LLM inference and human review. I work equally well inside structured teams and in full autonomy, including projects for regional public bodies run from requirements to delivery. C1 English, certified.",
-          "My method is algorithmic: break the problem down, optimise the flow, keep the map in my head, and write it down so it outlives me.",
+          "Front-end developer (Angular) with three years' experience on the digital platforms of Italian education and cultural heritage: HUB Scuola, the main learning platform for Italian schools, and platforms for the National Central Library of Rome and CNR research infrastructures linked to the European Open Science Cloud — with a consistent focus on web accessibility.",
+          "Since leaving employment in May 2026 I have been working on independent projects: a documented, tested workflow that keeps knowledge bases organised with the help of a language model and human review, the self-hosted infrastructure that runs it, and a network audit tool still in development. I work well both inside structured teams and autonomously on the features entrusted to me, with occasional direct contact with clients. English at C1 level (CEFR, self-assessed).",
+          "My method is structure before product: break the problem down, document every decision, and check before trusting, so that the work can be reviewed, handed over and maintained.",
         ],
 
         work: [
@@ -617,23 +637,10 @@
               "Translation of design mock-ups into Angular components; design and implementation of entire application flows of varying complexity.",
               "Web accessibility (a11y) in line with EU Directive 2016/2102; refactoring, debugging and unit testing.",
               "Large-scale modernisation of legacy viewers for complex editorial formats, carried out autonomously in close cooperation with the design and UX teams.",
-              "Front-end contribution, within project teams, to platforms for national cultural and research institutions: digitalisation of the collections of the National Central Library of Rome, and CNR research infrastructures in the digital humanities (funded under NextGenerationEU and linked to the European Open Science Cloud).",
-              "Projects for regional public bodies managed end-to-end, from requirements gathering to delivery, with direct contact with the client.",
+              "Front-end contribution, within project teams, to platforms for national cultural and research institutions: digitalisation of the collections of the National Central Library of Rome (metaCMS suite, interoperable with Europeana), and CNR research infrastructures in the digital humanities under the H2IOSC project, funded by NextGenerationEU (Italian NRRP) and part of the Italian contribution to the European Open Science Cloud (EOSC).",
+              "Participation in client alignment calls, including on projects for regional public bodies: contributing technical proposals and, in urgent cases, liaising directly with the client.",
               "Development and integration of Node.js APIs together with the back-end team; data visualisation (charts and tables).",
               "Tools: Angular, TypeScript, Node.js, Docker, Postman, Figma, Git (structured repositories with submodules).",
-            ],
-          },
-          {
-            title: "ICT consultant",
-            org: "Self-employed",
-            dates: "1 May 2026 – Current",
-            place: "Prato, Italy",
-            lead: "Independent technology consultant working on applied AI and knowledge management.",
-            bullets: [
-              "Integration of AI-based tools for professional firms (accountancy practices), automating repetitive workflows to free human time for analysis and judgment.",
-              "Design and development of AI systems: OCR pipelines, self-maintaining documentation, retrieval architectures beyond the standard RAG approach.",
-              "Design and operation of a self-hosted infrastructure supporting this work: containerisation, virtualisation, networking, security and local LLM inference on GPU.",
-              "See Projects below for the systems built in this period.",
             ],
           },
         ],
@@ -651,21 +658,21 @@
               "Programming and software engineering: programming, programming methodologies, concurrent programming, algorithms and data structures, interpreters and compilers, theoretical computer science.",
               "Systems and networks: operating systems, computer architecture, computer networks.",
               "Data and mathematics: databases and information systems, probability and statistics, numerical analysis, calculus I and II, linear algebra, discrete mathematics and logic, general physics.",
-              "Security: computer forensics — digital investigation and the legal framework of IT evidence.",
-              "Design and business: multimedia design and production, business skills.",
+              "Electives from the Master's degree curriculum: multimedia design and production; computer forensics.",
+              "Business skills.",
               "Curricular internship (12 ECTS).",
               "Final thesis: “Progressive Web Applications and Web Operating Systems” (supervisor: Prof. Rosario Pugliese; co-supervisor: Prof. Francesco Tiezzi). An analysis of Progressive Web Apps as a standards-based, cross-platform alternative to native applications, including a fully working PWA developed with Node.js, Ionic, Vue.js and Firebase.",
             ],
           },
           {
             title:
-              "Program for Intensive English (PIE) — Level 6 of 7, corresponding to CEFR C1",
-            org: "Indiana University–Purdue University Indianapolis (IUPUI)",
+              "Program for Intensive English (PIE) — Level 5 of 7 completed",
+            org: "Indiana University–Purdue University Indianapolis (IUPUI) — IU School of Liberal Arts",
             dates: "22 Aug 2022 – 12 Oct 2022",
             place: "Indianapolis, United States",
-            lead: "Intensive academic English programme (autumn session) at an American university.",
+            lead: "Intensive academic English programme (Fall 1 session, minimum 140 hours of classroom instruction) at an American university.",
             bullets: [
-              "Achieved level 6 out of 7 in both Reading–Writing and Listening–Speaking, corresponding to CEFR level C1.",
+              "Completed Level 5 of 7 in Reading–Writing and Listening–Speaking, grade average 88/100 (PIE Letter of Achievement, 13 October 2022).",
               "Academic writing, oral presentation and discussion skills.",
               "Full immersion in an international student environment.",
             ],
@@ -683,36 +690,37 @@
         projects: [
           {
             title: "Knowledge Genome Orchestrator",
-            org: "Personal project",
-            dates: "2026 – Current",
-            lead: "A distributed, encrypted, multi-domain knowledge base in which an LLM agent incrementally builds and maintains a persistent wiki, instead of re-deriving knowledge at query time (no vector database, no embedding pipeline, no retrieval server).",
+            org: "Independent project",
+            dates: "May 2026 – Current",
+            lead: "A documented, tested workflow that keeps personal knowledge bases organised: a language model reads each new note and proposes updates to a wiki, plain scripts check every proposal, and nothing is saved without human review.",
             bullets: [
-              "Two-phase agent architecture with an explicit trust boundary: the agent performs semantic work only, a deterministic and tested post-processor validates its output before anything touches the filesystem.",
-              "Per-genome AES-256 encryption (git-crypt) with runtime key injection from a password manager, so the key never touches disk.",
-              "Human review gate through pull requests; deterministic test suite with no dependency on model, GPU or network.",
-              "Multi-domain architecture based on Git submodules, orchestrated via webhooks and local LLM inference.",
-            ],
-          },
-          {
-            title: "NETKIT — network field audit toolkit",
-            org: "Personal project",
-            dates: "2026 – Current",
-            lead: "A terminal application for professional network auditing, designed for consultants and freelancers, in which the legal layer is a first-class component rather than an afterthought.",
-            bullets: [
-              "Digital consent flow producing a non-repudiable SHA-256 hash of agreement, timestamp and scope.",
-              "Fail-closed “scope guard” validating every IP and subnet in real time, with time windows and exclusion lists.",
-              "Alignment with NIS2 and GDPR; local-first AI reporting so audit data never leaves the machine.",
-              "Built on Bun and OpenTUI with strictly typed TypeScript (branded types, result pattern) and SQLite.",
+              "Every proposal is validated by deterministic scripts before it touches any file, and reaches a person as a pull request to accept or refuse; pages keep their own history instead of being overwritten.",
+              "Tests before code: generated code must come with tests that fail before the implementation exists; over 850 automated tests with no dependency on the model or the network.",
+              "Private notebooks encrypted, with keys kept in a password manager and never stored on disk.",
+              "Extensive technical documentation (18 documents, including a register of every defect found and why).",
+              "Tried out in an unpaid pilot with an accountancy firm (knowledge management for their documents, with minor network fixes); the collaboration did not continue beyond the pilot phase.",
             ],
           },
           {
             title: "Self-hosted infrastructure",
-            org: "Personal project",
+            org: "Independent project",
             dates: "2026 – Current",
-            lead: "A fully containerised self-hosted stack built with Docker Compose, deliberately chosen over Kubernetes for operational simplicity, fast recovery and maintainability.",
+            lead: "A small home infrastructure on two machines, described as code in a single repository and documented as it evolved.",
             bullets: [
-              "Reverse proxy and SSL management, private Git hosting (Forgejo), workflow automation (n8n with PostgreSQL and Redis), secure external access via Cloudflare Tunnel.",
-              "Local LLM runtime (Ollama) with NVIDIA GPU acceleration; infrastructure-as-code and reproducible, independently deployable stacks.",
+              "Thirteen containerised services managed with Docker Compose: Git hosting (Forgejo), workflow automation (n8n with PostgreSQL and Redis), password manager, notifications, reverse proxy.",
+              "Update checker that reports what can be updated and at what risk, with a plain-language summary; updates are always applied by hand.",
+              "Network divided into separate zones behind an OPNsense firewall; ordered shutdown of the two machines on battery during power cuts.",
+              "Workstation reproducible from a dotfiles repository managed with chezmoi: software repositories, packages, applications, development tools and editor configuration restored on a new machine with a single command; private keys kept out of the repository.",
+            ],
+          },
+          {
+            title: "NETKIT — network audit tool",
+            org: "Independent project, in development",
+            dates: "2026 – Current",
+            lead: "A terminal application to help consultants check the networks of small companies only within an agreed, signed perimeter and time window.",
+            bullets: [
+              "Consent recorded and fingerprinted before any scan; every address checked against the agreed perimeter; scans stop automatically when the time window ends.",
+              "Core engine in strictly typed TypeScript on Bun with SQLite and around 200 tests; the terminal interface is the next phase. Not yet used on real networks.",
             ],
           },
         ],
@@ -743,19 +751,13 @@
             ],
           },
           {
-            group: "AI and emerging technologies",
+            group: "Automation and documentation",
             items: [
-              "principles of artificial intelligence",
-              "emergent technologies",
-              "use automatic programming",
-            ],
-          },
-          {
-            group: "Security and compliance",
-            items: [
-              "ICT security legislation",
-              "NIS2 and GDPR alignment",
-              "digital forensics fundamentals",
+              "workflow automation (n8n)",
+              "automated testing",
+              "AI-assisted development",
+              "technical documentation",
+              "Obsidian",
             ],
           },
           {
@@ -771,14 +773,13 @@
             ],
           },
           {
-            group: "Client and consulting",
+            group: "Collaboration",
             items: [
-              "identify customer requirements",
-              "propose ICT solutions to business problems",
-              "collect customer feedback on applications",
+              "work with design and UX teams",
+              "work with back-end teams",
+              "contribute technical proposals in client calls",
               "use online tools to collaborate",
               "adapt to changes in technological development plans",
-              "keep up with the latest information systems solutions",
             ],
           },
         ],
@@ -788,7 +789,7 @@
           others: [
             {
               name: "English",
-              note: "Certified C1 — Program for Intensive English (level 6 of 7), IUPUI, Indianapolis, October 2022.",
+              note: "C1 (CEFR self-assessment). Program for Intensive English, IUPUI, Indianapolis, August–October 2022: Level 5 of 7 completed in Reading–Writing and Listening–Speaking.",
               levels: [
                 ["Listening", "C1"],
                 ["Reading", "C1"],
@@ -800,13 +801,8 @@
           ],
         },
 
-        publications: [
-          {
-            title: "Progressive Web Applications and Web Operating Systems",
-            when: "2022",
-            text: "Bachelor thesis, University of Florence. Supervisor: Prof. Rosario Pugliese; co-supervisor: Prof. Francesco Tiezzi.",
-          },
-        ],
+        // Hidden while empty. Add entries as { title, when, text }.
+        publications: [],
 
         driving: [
           { title: "Category B", when: "11 Jul 2016 – 27 Mar 2034" },
@@ -816,7 +812,7 @@
         interests: [
           {
             title: "Agriculture, food and beverage culture",
-            text: "Sustainable, non-intensive agriculture and quality food supply chains (Slow Food). Director of a family-run agricultural business managing farmland and rural property in Umbria. Viticultural biodiversity through G.R.A.S.P.O., the ampelographic research association recovering ancient and rare grape varieties. Wine culture (AIS member, sommelier in training). Specialty coffee.",
+            text: "Sustainable, non-intensive agriculture and quality food supply chains (Slow Food), a topic I also follow from within the family agricultural business. Viticultural biodiversity through G.R.A.S.P.O., the ampelographic research association recovering ancient and rare grape varieties. Wine culture (AIS member, sommelier in training). Specialty coffee.",
           },
           {
             title: "Sustainable development, finance and society",
@@ -831,9 +827,20 @@
           },
         ],
 
+        additional: [
+          {
+            title: "Writing",
+            text: "Essays published on Medium, in English and for a general audience: on leaving my first job and what three years in educational publishing taught me; on the choices behind a small self-hosted infrastructure; on a documented workflow that keeps knowledge bases up to date with human review.",
+          },
+          {
+            title: "Family agricultural business",
+            text: "Managing director and legal representative of Casal de' Cherubini S.r.l., a family-owned agricultural company managing farmland and rental property in Umbria. Signatory role exercised in agreement with the other family members, with no day-to-day operational involvement.",
+          },
+        ],
+
         colophon: {
           left: "Curriculum Vitae — Matteo Cherubini · Structured after the Europass format",
-          right: "Set in Atkinson Hyperlegible · Last updated: July 2026",
+          right: "Set in Atkinson Hyperlegible · Last updated: September 2026",
         },
       };
       /* ================================================================
@@ -854,9 +861,15 @@
             })[c],
         );
 
+      /* a bullet is either a string or { label, text } */
+      const bullet = (i) =>
+        typeof i === "string"
+          ? esc(i)
+          : `<strong>${esc(i.label)}:</strong> ${esc(i.text)}`;
+
       const list = (items) =>
         items?.length
-          ? `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`
+          ? `<ul>${items.map((i) => `<li>${bullet(i)}</li>`).join("")}</ul>`
           : "";
 
       const section = (id, title, body) =>
@@ -903,7 +916,8 @@
         return `<article class="entry">${rail}${body}</article>`;
       }
 
-      const renderEntries = (arr) => arr.map(renderEntry).join("");
+      const renderEntries = (arr) =>
+        arr?.length ? arr.map(renderEntry).join("") : "";
 
       function renderSkills(groups) {
         return `<div class="skills">${groups
@@ -945,6 +959,7 @@
       }
 
       function renderMinis(items) {
+        if (!items?.length) return "";
         return `<div class="stack">${items
           .map(
             (i) => `
@@ -974,6 +989,7 @@
         section("s-net", "Networks and memberships", renderMinis(CV.networks)),
         section("s-drive", "Driving licence", renderMinis(CV.driving)),
         section("s-int", "Hobbies and interests", renderMinis(CV.interests)),
+        section("s-add", "Additional information", renderMinis(CV.additional)),
         `<footer class="colophon">
      <span>${esc(CV.colophon.left)}</span>
      <span>${esc(CV.colophon.right)}</span>
