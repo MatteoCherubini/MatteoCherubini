@@ -1,6 +1,6 @@
 Hi, I'm @MatteoCherubini — a front-end developer from Tuscany who likes structure, documentation, and writing down what happened.
 
-I studied Computer Science in Florence ([thesis on Progressive Web Apps](https://github.com/MatteoCherubini/text-editor-pwa/blob/master/presentazioneCherubini4.pdf), 2022), then spent three years on the front-end of Italian digital publishing and cultural heritage — school platforms, library collections, a lot of accessibility work — and in 2026 left to work on my own projects, the ones that kept getting postponed.
+I studied Computer Science in Florence ([thesis on Progressive Web Apps](https://github.com/MatteoCherubini/MatteoCherubini/blob/main/matteo_cherubini_thesis_abstract_2022_it.pdf), 2022), then spent three years on the front-end of Italian digital publishing and cultural heritage — school platforms, library collections, a lot of accessibility work — and in 2026 left to work on my own projects, the ones that kept getting postponed.
 
 ## What I'm building
 
