@@ -26,7 +26,7 @@ Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di 
 
 **Sviluppatore Front-End — Gruppo Meta / M.E.T.A. S.r.l. (Gruppo ETT), poi Deda Next S.r.l. (Dedagroup)**\
 _Software house specializzata in digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca; partner tecnologico di editori, biblioteche nazionali ed enti di ricerca_\
-_24 gennaio 2023 – 1 maggio 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro agile parziale · contratto a tempo indeterminato (CCNL Metalmeccanici industria, impiegato)_
+_24 gennaio 2023 – 30 aprile 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro agile parziale · contratto a tempo indeterminato (CCNL Metalmeccanici industria, impiegato)_
 
 - Membro del team front-end (Angular); referente operativo sul cliente principale **Mondadori Education** per la piattaforma **HUB Scuola**, la principale piattaforma di didattica digitale per le scuole italiane: applicazione del nuovo stile grafico alle applicazioni Hub ed evolutive gestite in autonomia (nuove funzionalità, in particolare quiz ed esercizi interattivi integrati negli e-book).
 - Interpretazione di mock grafici come componenti Angular; progettazione e scrittura di interi nuovi flussi applicativi di varia complessità; interventi di qualità con focus su accessibilità (a11y, in linea con la direttiva UE 2016/2102), refactoring, debugging e unit testing.
