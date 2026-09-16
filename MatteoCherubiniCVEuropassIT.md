@@ -7,10 +7,8 @@
 ## INFORMAZIONI PERSONALI
 
 **Matteo Cherubini**\
-Data e luogo di nascita: 27 marzo 1997, Firenze (Italia)\
 Nazionalità: italiana\
-Indirizzo: via Santa Gonda 108, 59100 Prato (PO), Italia\
-Telefono: (+39) 327 6615664 · E-mail: cherubinimatte@gmail.com\
+E-mail: cherubinimatte@gmail.com\
 GitHub: [github.com/MatteoCherubini](https://github.com/MatteoCherubini) · Medium: [medium.com/@cherubinimatte](https://medium.com/@cherubinimatte)\
 Patenti A e B, automunito
 
