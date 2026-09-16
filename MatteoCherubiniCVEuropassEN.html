@@ -580,7 +580,11 @@
 
     <main class="sheet" id="cv"></main>
 
+    <script src="private.js"></script>
     <script>
+      // Personal details are read from private.js (git-ignored), which sets window.PRIVATE.
+      const PRIVATE = window.PRIVATE ?? {};
+
       /* ================================================================
    ▼▼▼  EDIT ONLY THIS OBJECT — the layout renders itself  ▼▼▼
    ================================================================ */
@@ -590,16 +594,13 @@
           headline: "Front-end developer · Accessibility, automation and documentation",
           facts: [
             { label: "Nationality", value: "Italian" },
-            { label: "Date of birth", value: "27 March 1997" },
-            { label: "Place of birth", value: "Florence, Italy" },
-            {
-              label: "Address",
-              value: "via Santa Gonda 108, 59100 Prato (PO), Italy",
-            },
+            { label: "Date of birth", value: PRIVATE.dateOfBirth },
+            { label: "Place of birth", value: PRIVATE.placeOfBirth },
+            { label: "Address", value: PRIVATE.address },
             {
               label: "Phone",
-              value: "(+39) 327 6615664",
-              href: "tel:+393276615664",
+              value: PRIVATE.phone,
+              href: PRIVATE.phone && `tel:${PRIVATE.phone.replace(/[^\d+]/g, "")}`,
             },
             {
               label: "Email",
@@ -822,8 +823,8 @@
         publications: [],
 
         driving: [
-          { title: "Category B", when: "11 Jul 2016 – 27 Mar 2034" },
-          { title: "Category A", when: "9 Sep 2023 – 27 Mar 2034" },
+          { title: "Category B", when: "Since 11 Jul 2016" },
+          { title: "Category A", when: "Since 9 Sep 2023" },
         ],
 
         interests: [
@@ -899,6 +900,7 @@
       /* ---------- renderers ---------- */
       function renderMasthead(p) {
         const facts = p.facts
+          .filter((f) => f.value)
           .map(
             (f) => `
     <div class="fact">
