@@ -500,13 +500,13 @@
           font-size: 10.5pt;
         }
         .section {
-          margin-top: 11pt;
+          margin-top: 8pt;
         }
         .section > h2 {
           font-size: 9pt;
         }
         .entry {
-          padding-bottom: 8pt;
+          padding-bottom: 6pt;
           /* long entries may span pages; headings stay with their text */
           break-inside: auto;
         }
@@ -525,7 +525,7 @@
           break-inside: avoid;
         }
         .entry + .entry {
-          padding-top: 8pt;
+          padding-top: 6pt;
         }
         .entry-body li,
         .entry-lead {
@@ -580,7 +580,11 @@
 
     <main class="sheet" id="cv"></main>
 
+    <script src="private.js"></script>
     <script>
+      // Personal details are read from private.js (git-ignored), which sets window.PRIVATE.
+      const PRIVATE = window.PRIVATE ?? {};
+
       /* ================================================================
    ▼▼▼  EDIT ONLY THIS OBJECT — the layout renders itself  ▼▼▼
    ================================================================ */
@@ -590,16 +594,13 @@
           headline: "Front-end developer · Accessibility, automation and documentation",
           facts: [
             { label: "Nationality", value: "Italian" },
-            { label: "Date of birth", value: "27 March 1997" },
-            { label: "Place of birth", value: "Florence, Italy" },
-            {
-              label: "Address",
-              value: "via Santa Gonda 108, 59100 Prato (PO), Italy",
-            },
+            { label: "Date of birth", value: PRIVATE.dateOfBirth },
+            { label: "Place of birth", value: PRIVATE.placeOfBirth },
+            { label: "Address", value: PRIVATE.address },
             {
               label: "Phone",
-              value: "(+39) 327 6615664",
-              href: "tel:+393276615664",
+              value: PRIVATE.phone,
+              href: PRIVATE.phone && `tel:${PRIVATE.phone.replace(/[^\d+]/g, "")}`,
             },
             {
               label: "Email",
@@ -626,6 +627,13 @@
         ],
 
         work: [
+          {
+            title: "Independent projects (self-employed)",
+            org: "Freelance activity under Italian VAT registration",
+            dates: "1 May 2026 – Current",
+            place: "Prato, Italy",
+            lead: "Work on my own projects, described under Projects: a documented, tested workflow for maintaining knowledge bases with human review, the self-hosted infrastructure that runs it, and a network audit tool in development.",
+          },
           {
             title: "Front-end developer",
             org: "Gruppo Meta / M.E.T.A. S.r.l. (ETT Group), later Deda Next S.r.l. (Dedagroup)",
@@ -659,7 +667,6 @@
               "Systems and networks: operating systems, computer architecture, computer networks.",
               "Data and mathematics: databases and information systems, probability and statistics, numerical analysis, calculus I and II, linear algebra, discrete mathematics and logic, general physics.",
               "Electives from the Master's degree curriculum: multimedia design and production; computer forensics.",
-              "Business skills.",
               "Curricular internship (12 ECTS).",
               "Final thesis: “Progressive Web Applications and Web Operating Systems” (supervisor: Prof. Rosario Pugliese; co-supervisor: Prof. Francesco Tiezzi). An analysis of Progressive Web Apps as a standards-based, cross-platform alternative to native applications, including a fully working PWA developed with Node.js, Ionic, Vue.js and Firebase.",
             ],
@@ -789,13 +796,24 @@
           others: [
             {
               name: "English",
-              note: "C1 (CEFR self-assessment). Program for Intensive English, IUPUI, Indianapolis, August–October 2022: Level 5 of 7 completed in Reading–Writing and Listening–Speaking.",
+              note: "C1 (CEFR self-assessment); Program for Intensive English, IUPUI, 2022 (see Education and training).",
               levels: [
                 ["Listening", "C1"],
                 ["Reading", "C1"],
                 ["Writing", "C1"],
                 ["Spoken production", "C1"],
                 ["Spoken interaction", "C1"],
+              ],
+            },
+            {
+              name: "French",
+              note: "A1 (CEFR self-assessment), studying towards A2.",
+              levels: [
+                ["Listening", "A1"],
+                ["Reading", "A1"],
+                ["Writing", "A1"],
+                ["Spoken production", "A1"],
+                ["Spoken interaction", "A1"],
               ],
             },
           ],
@@ -805,14 +823,14 @@
         publications: [],
 
         driving: [
-          { title: "Category B", when: "11 Jul 2016 – 27 Mar 2034" },
-          { title: "Category A", when: "9 Sep 2023 – 27 Mar 2034" },
+          { title: "Category B", when: "Since 11 Jul 2016" },
+          { title: "Category A", when: "Since 9 Sep 2023" },
         ],
 
         interests: [
           {
             title: "Agriculture, food and beverage culture",
-            text: "Sustainable, non-intensive agriculture and quality food supply chains (Slow Food), a topic I also follow from within the family agricultural business. Viticultural biodiversity through G.R.A.S.P.O., the ampelographic research association recovering ancient and rare grape varieties. Wine culture (AIS member, sommelier in training). Specialty coffee.",
+            text: "Sustainable, non-intensive agriculture and quality food supply chains (Slow Food), a topic I also follow from within the family agricultural business. Viticultural biodiversity through G.R.A.S.P.O., the ampelographic research association recovering ancient and rare grape varieties. Specialty coffee.",
           },
           {
             title: "Sustainable development, finance and society",
@@ -882,6 +900,7 @@
       /* ---------- renderers ---------- */
       function renderMasthead(p) {
         const facts = p.facts
+          .filter((f) => f.value)
           .map(
             (f) => `
     <div class="fact">

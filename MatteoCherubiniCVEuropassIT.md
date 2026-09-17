@@ -7,10 +7,8 @@
 ## INFORMAZIONI PERSONALI
 
 **Matteo Cherubini**\
-Data e luogo di nascita: 27 marzo 1997, Firenze (Italia)\
 Nazionalità: italiana\
-Indirizzo: via Santa Gonda 108, 59100 Prato (PO), Italia\
-Telefono: (+39) 327 6615664 · E-mail: cherubinimatte@gmail.com\
+E-mail: cherubinimatte@gmail.com\
 GitHub: [github.com/MatteoCherubini](https://github.com/MatteoCherubini) · Medium: [medium.com/@cherubinimatte](https://medium.com/@cherubinimatte)\
 Patenti A e B, automunito
 
@@ -24,11 +22,17 @@ Sviluppatore front-end (Angular, con sviluppo di API in NodeJS) con tre anni di 
 
 ## ESPERIENZA PROFESSIONALE
 
+**Progetti indipendenti (lavoro autonomo)**\
+_Attività libero-professionale con partita IVA_\
+_1 maggio 2026 – oggi · Prato_
+
+Lavoro sui miei progetti, descritti in Progetti indipendenti: un workflow documentato e testato che mantiene aggiornate basi di conoscenza con revisione umana, l'infrastruttura self-hosted che lo esegue e uno strumento di audit di rete in sviluppo.
+
 **Sviluppatore Front-End — Gruppo Meta / M.E.T.A. S.r.l. (Gruppo ETT), poi Deda Next S.r.l. (Dedagroup)**\
 _Software house specializzata in digitalizzazione dell'editoria scolastica, del patrimonio culturale e della ricerca; partner tecnologico di editori, biblioteche nazionali ed enti di ricerca_\
 _24 gennaio 2023 – 30 aprile 2026 · sedi di Firenze (Le Murate) e Pisa, con lavoro agile parziale · contratto a tempo indeterminato (CCNL Metalmeccanici industria, impiegato)_
 
-- Membro del team front-end (Angular); referente operativo sul cliente principale **Mondadori Education** per la piattaforma **HUB Scuola**, la principale piattaforma di didattica digitale per le scuole italiane: applicazione del nuovo stile grafico alle applicazioni Hub ed evolutive gestite in autonomia (nuove funzionalità, in particolare quiz ed esercizi interattivi integrati negli e-book).
+- Membro del team front-end (Angular) sul cliente principale **Mondadori Education** per la piattaforma **HUB Scuola**, la principale piattaforma di didattica digitale per le scuole italiane: applicazione del nuovo stile grafico alle applicazioni Hub ed evolutive gestite in autonomia (nuove funzionalità, in particolare quiz ed esercizi interattivi integrati negli e-book).
 - Interpretazione di mock grafici come componenti Angular; progettazione e scrittura di interi nuovi flussi applicativi di varia complessità; interventi di qualità con focus su accessibilità (a11y, in linea con la direttiva UE 2016/2102), refactoring, debugging e unit testing.
 - Ammodernamento e refactoring su larga scala di progetti legacy (visori per file editoriali complessi e dinamici), in autonomia dal team di sviluppo e a stretto contatto con il team grafico/UX; studio applicato di regole di accessibilità e composizione del layout.
 - Sviluppo front-end su progetti per **istituzioni culturali e di ricerca di rilievo nazionale ed europeo**: la digitalizzazione delle collezioni della **Biblioteca Nazionale Centrale di Roma** (suite metaCMS, interoperabile con _Europeana_) e piattaforme per le infrastrutture di ricerca del **CNR** nelle Digital Humanities nell'ambito del progetto **H2IOSC** — finanziato da NextGenerationEU/PNRR e tassello italiano della **European Open Science Cloud** — tra cui ambienti di apprendimento e visualizzatori.
@@ -85,7 +89,8 @@ Applicazione da terminale per aiutare i consulenti a controllare le reti di picc
 ## COMPETENZE PERSONALI
 
 **Lingua madre:** italiano\
-**Inglese:** C1 (Quadro Comune Europeo, autovalutazione) — ascolto, lettura, scrittura, produzione e interazione orale. Formazione: _Program for Intensive English_, Indiana University–Purdue University Indianapolis (IUPUI), 22 agosto – 12 ottobre 2022: Level 5 di 7 completato in Reading–Writing e Listening–Speaking.
+**Inglese:** C1 (Quadro Comune Europeo, autovalutazione) — ascolto, lettura, scrittura, produzione e interazione orale. Formazione: _Program for Intensive English_, Indiana University–Purdue University Indianapolis (IUPUI), 22 agosto – 12 ottobre 2022: Level 5 di 7 completato in Reading–Writing e Listening–Speaking.\
+**Francese:** A1 (Quadro Comune Europeo, autovalutazione), in studio verso l'A2.
 
 **Competenze digitali**
 
