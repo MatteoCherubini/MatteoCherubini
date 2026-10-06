@@ -122,7 +122,7 @@ Applicazione da terminale per aiutare i consulenti a controllare le reti di picc
 
 **Esperienze all'estero:** soggiorno di studio negli Stati Uniti (Indianapolis, 22 agosto – 12 ottobre 2022) — Program for Intensive English, IUPUI.
 
-**Contesto imprenditoriale familiare:** amministratore delegato e legale rappresentante di **Casal de' Cherubini S.r.l.**, società agricola familiare che gestisce terreni agricoli e immobili in locazione in Umbria. Ruolo di firma esercitato in accordo con gli altri membri della famiglia, senza impegno operativo quotidiano.
+**Terra di famiglia in Umbria:** terreni agricoli e immobili della famiglia in Umbria, intestati a **Casal de' Cherubini S.r.l.** e affittati a terzi. Presidente del consiglio di amministrazione e rappresentante dell'impresa: ruolo di firma non retribuito, esercitato in accordo con gli altri membri della famiglia, senza impegno operativo quotidiano.
 
 **Interessi (in coerenza con l'agenda ambientale, agroalimentare e di finanza sostenibile):**
 
